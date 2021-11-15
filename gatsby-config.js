@@ -4,12 +4,12 @@ module.exports = {
     title: "Sonia Kuras",
   },
   plugins: [
-    {
-      resolve: "gatsby-source-wordpress",
-      options: {
-        url: "http://www.soniakuras.com/graphql",
-      },
-    },
+    // {
+    //   resolve: "gatsby-source-wordpress",
+    //   options: {
+    //     url: "http://www.soniakuras.com/graphql",
+    //   },
+    // },
     "gatsby-plugin-styled-components",
     "gatsby-plugin-image",
     "gatsby-plugin-react-helmet",
