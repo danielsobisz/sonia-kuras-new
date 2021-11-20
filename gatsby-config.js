@@ -1,3 +1,5 @@
+const path = require(`path`);
+
 module.exports = {
   siteMetadata: {
     siteUrl: "https://www.yourdomain.tld",
@@ -10,13 +12,21 @@ module.exports = {
     //     url: "http://www.soniakuras.com/graphql",
     //   },
     // },
+    "gatsby-plugin-root-import",
     "gatsby-plugin-styled-components",
     "gatsby-plugin-image",
     "gatsby-plugin-react-helmet",
+    // {
+    //   resolve: "gatsby-plugin-manifest",
+    //   options: {
+    //     icon: "src/images/icon.png",
+    //   },
+    // },
     {
-      resolve: "gatsby-plugin-manifest",
+      resolve: `gatsby-source-filesystem`,
       options: {
-        icon: "src/images/icon.png",
+        name: `images`,
+        path: path.join(__dirname, `src`, `images`),
       },
     },
     "gatsby-plugin-sharp",
@@ -28,6 +38,13 @@ module.exports = {
         path: "./src/images/",
       },
       __key: "images",
+    },
+    {
+      resolve: `gatsby-plugin-google-fonts`,
+      options: {
+        fonts: ["Raleway", "Arima Madurai", "Bree Serif"],
+        display: "swap",
+      },
     },
   ],
 };
