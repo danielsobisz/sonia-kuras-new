@@ -15,6 +15,11 @@ const IndexPage = () => {
       <GlobalStyle />
       <Header />
       <Hero />
+      <div
+        style={{
+          height: "100vh",
+        }}
+      ></div>
     </ThemeProvider>
   );
 };

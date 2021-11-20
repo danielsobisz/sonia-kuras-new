@@ -20,13 +20,12 @@ body {
   line-height: 1;
   font-size: 1.8rem;
   font-family: 'Raleway', sans-serif;
+
+  background-color: ${(props) => props.theme.gray};
 }
 
 ol, ul {
   list-style: none; }
-
-blockquote, q {
-  quotes: none; }
 
   li {
     list-style: none;
@@ -41,16 +40,6 @@ a {
 a, p, li, span {
   color: ${(props) => props.theme.black};
 }
-
-blockquote {
-  &:before, &:after {
-    content: '';
-    content: none; } }
-
-q {
-  &:before, &:after {
-    content: '';
-    content: none; } }
 
 table {
   border-collapse: collapse;

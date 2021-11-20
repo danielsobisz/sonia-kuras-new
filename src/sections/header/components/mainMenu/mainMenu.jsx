@@ -6,7 +6,7 @@ import navItems from "data/navItemsData.js";
 
 const MainMenu = () => {
   const navItemsMapped = navItems?.map((item) => (
-    <StyledLi>
+    <StyledLi key={item.name}>
       <a href={item.href}>{item.name}</a>
     </StyledLi>
   ));

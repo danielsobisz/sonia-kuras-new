@@ -7,6 +7,13 @@ export const StyledHeader = styled.header`
 
   width: 100%;
 
+  ${(props) =>
+    props.isActive
+      ? `
+      position: fixed;
+      `
+      : null}
+
   .inner {
     display: flex;
     justify-content: space-between;
