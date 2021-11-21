@@ -4,7 +4,7 @@ export const StyledLogo = styled.div`
   display: flex;
 
   .titles {
-    display: flex;
+    display: ${(props) => (props.isActive ? "none" : "flex")};
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -16,5 +16,10 @@ export const StyledLogo = styled.div`
 
       font-size: 1.4rem;
     }
+  }
+
+  .image {
+    width: ${(props) => (props.isActive ? "6rem" : "12.5rem")};
+    height: ${(props) => (props.isActive ? "6rem" : "12.5rem")};
   }
 `;

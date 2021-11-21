@@ -4,9 +4,9 @@ import { StyledNav, StyledLi } from "./mainMenu.styles";
 
 import navItems from "data/navItemsData.js";
 
-const MainMenu = () => {
+const MainMenu = ({ isActive }) => {
   const navItemsMapped = navItems?.map((item) => (
-    <StyledLi key={item.name}>
+    <StyledLi isActive={isActive} key={item.name}>
       <a href={item.href}>{item.name}</a>
     </StyledLi>
   ));

@@ -11,6 +11,9 @@ export const StyledLi = styled.li`
     text-transform: uppercase;
     letter-spacing: 0.2rem;
 
-    color: ${(props) => props.theme.white};
+    color: ${(props) =>
+      props.isActive ? props.theme.black : props.theme.white};
+
+    font-size: ${(props) => (props.isActive ? "1.4rem" : "1.8rem")};
   }
 `;

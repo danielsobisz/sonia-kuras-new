@@ -5,11 +5,13 @@ export const StyledQuote = styled.div`
   justify-content: center;
   align-items: center;
 
-  margin: 5rem 0;
+  padding: 5rem 0;
 
   background-color: ${(props) => props.theme.white};
 
   .quote {
+    text-align: center;
+
     font-size: 2.8rem;
   }
 

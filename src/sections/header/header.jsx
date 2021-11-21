@@ -11,7 +11,9 @@ const Header = () => {
 
   const setOnScroll = () => {
     if (window.scrollY > 500) {
-      setIsActive(!isActive);
+      setIsActive(true);
+    } else if (100 > window.scrollY) {
+      setIsActive(false);
     }
   };
 
@@ -24,9 +26,9 @@ const Header = () => {
   return (
     <StyledHeader isActive={isActive}>
       <div className="inner">
-        <Logo />
+        <Logo isActive={isActive} />
 
-        <MainMenu />
+        <MainMenu isActive={isActive} />
       </div>
     </StyledHeader>
   );

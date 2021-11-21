@@ -5,4 +5,5 @@ export const theme = {
   green: "#87A083",
 
   headerHeight: "15rem",
+  headerHeightScroll: "8rem",
 };
