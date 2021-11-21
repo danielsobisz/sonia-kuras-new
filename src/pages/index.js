@@ -4,6 +4,7 @@ import { ThemeProvider } from "styled-components";
 
 import Header from "sections/header";
 import Hero from "sections/hero";
+import About from "sections/about";
 
 import { theme } from "styles/theme";
 
@@ -13,13 +14,12 @@ const IndexPage = () => {
   return (
     <ThemeProvider theme={theme}>
       <GlobalStyle />
+
       <Header />
+
       <Hero />
-      <div
-        style={{
-          height: "100vh",
-        }}
-      ></div>
+
+      <About />
     </ThemeProvider>
   );
 };
