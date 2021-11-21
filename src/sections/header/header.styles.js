@@ -4,6 +4,7 @@ export const StyledHeader = styled.header`
   position: ${(props) => (props.isActive ? "fixed" : "absolute")};
   top: 0;
   left: 0;
+  z-index: 999;
 
   width: 100%;
 
