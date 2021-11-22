@@ -8,7 +8,7 @@ import { StyledPrice, StyledWrapper, StyledContainer } from "./pricing.styles";
 
 const Pricing = () => {
   const pricesDataMaped = pricesData.map((price) => (
-    <StyledPrice>
+    <StyledPrice key={price.title}>
       <p>{price.title}</p>
       <p>{price.price}</p>
     </StyledPrice>

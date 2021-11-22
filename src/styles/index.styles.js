@@ -20,8 +20,11 @@ body {
   line-height: 1;
   font-size: 1.8rem;
   font-family: 'Raleway', sans-serif;
-
   background-color: ${(props) => props.theme.gray};
+}
+
+button {
+  font-family: 'Raleway', sans-serif;
 }
 
 ol, ul {

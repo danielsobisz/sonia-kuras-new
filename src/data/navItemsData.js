@@ -2,18 +2,21 @@ const navItems = [
   {
     name: "start",
     href: "#",
+    asScrollTo: true,
   },
   {
     name: "kim jestem",
-    href: "#",
+    href: "#about",
+    asScrollTo: true,
   },
   {
     name: "oferta",
-    href: "#",
+    href: "offer",
   },
   {
     name: "cennik",
-    href: "#",
+    href: "#pricing",
+    asScrollTo: true,
   },
   {
     name: "wydarzenia",
@@ -21,7 +24,8 @@ const navItems = [
   },
   {
     name: "kontakt",
-    href: "#",
+    href: "#contact",
+    asScrollTo: true,
   },
 ];
 

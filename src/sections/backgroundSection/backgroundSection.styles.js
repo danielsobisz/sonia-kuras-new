@@ -20,6 +20,7 @@ export const StyledTextContent = styled.div`
   max-width: 120rem;
 
   p {
+    text-align: center;
     color: ${(props) => props.theme.white};
   }
 `;

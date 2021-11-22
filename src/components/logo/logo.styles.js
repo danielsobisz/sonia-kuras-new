@@ -11,6 +11,10 @@ export const StyledLogo = styled.div`
 
     color: ${(props) => props.theme.white};
 
+    transform: ${(props) =>
+      props.isActive ? "translateX(-500px)" : "translateX(0px)"};
+    transition: 0.4s;
+
     h2:nth-of-type(2) {
       margin-top: 0.4rem;
 
@@ -21,5 +25,7 @@ export const StyledLogo = styled.div`
   .image {
     width: ${(props) => (props.isActive ? "6rem" : "12.5rem")};
     height: ${(props) => (props.isActive ? "6rem" : "12.5rem")};
+
+    transition: 0.4s;
   }
 `;

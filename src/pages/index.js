@@ -1,5 +1,4 @@
 import * as React from "react";
-import { graphql } from "gatsby";
 import { ThemeProvider } from "styled-components";
 
 import Header from "sections/header";
@@ -7,6 +6,7 @@ import Hero from "sections/hero";
 import About from "sections/about";
 import BackgroundSection from "sections/backgroundSection";
 import Pricing from "sections/pricing";
+import Contact from "sections/contact";
 
 import { theme } from "styles/theme";
 
@@ -25,9 +25,11 @@ const IndexPage = () => {
 
       <BackgroundSection img="dmt.jpg" title="Psychoterapia tańcem i ruchem" />
 
+      <Pricing />
+
       <BackgroundSection img="offer.jpg" title="Oferta" />
 
-      <Pricing />
+      <Contact />
     </ThemeProvider>
   );
 };

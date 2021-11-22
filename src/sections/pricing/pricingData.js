@@ -9,6 +9,6 @@ export const pricesData = [
   },
   {
     title: "Sesja indywidualna",
-    price: "130 zł / 50m in",
+    price: "130 zł / 50 min",
   },
 ];
