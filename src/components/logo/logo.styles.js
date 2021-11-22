@@ -4,7 +4,8 @@ export const StyledLogo = styled.div`
   display: flex;
 
   .titles {
-    display: ${(props) => (props.isActive ? "none" : "flex")};
+    /* display: ${(props) => (props.isActive ? "none" : "flex")}; */
+    display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;

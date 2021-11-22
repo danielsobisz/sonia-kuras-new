@@ -37,11 +37,11 @@ const BackgroundSection = ({ title, content, img }) => {
         return (
           <StyledBackgroundSection img={bgImg[0].node.fluid.src}>
             <StyledTextContent>
-              <StyledTitleWrapper>
+              <StyledTitleWrapper data-sal="slide-up" data-sal-duration="500">
                 <Title title={title} isWhite asMain />
               </StyledTitleWrapper>
 
-              <p>
+              <p data-sal="slide-up" data-sal-duration="500">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore
                 quis aut obcaecati commodi at amet veritatis ipsam cupiditate
                 voluptas voluptates fugit, assumenda blanditiis laboriosam vitae
@@ -58,7 +58,7 @@ const BackgroundSection = ({ title, content, img }) => {
               </p>
             </StyledTextContent>
 
-            <StyledButtonWrapper>
+            <StyledButtonWrapper data-sal="slide-up" data-sal-duration="500">
               <Button>Poznaj ofertę</Button>
             </StyledButtonWrapper>
           </StyledBackgroundSection>

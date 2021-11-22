@@ -28,7 +28,7 @@ const About = () => {
       `}
       render={(data) => (
         <SectionWrapper>
-          <StyledAbout id="about">
+          <StyledAbout id="about" data-sal="slide-up" data-sal-duration="1000">
             <StyledFlexItem>
               <Img fluid={data.file.childImageSharp.fluid} />
             </StyledFlexItem>
