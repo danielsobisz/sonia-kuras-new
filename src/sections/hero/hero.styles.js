@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import bgImg from "images/header.jpg";
+import breakpoint from "styles/breakpoints";
 
 export const StyledHero = styled.div`
   min-height: 35rem;
@@ -16,9 +17,18 @@ export const StyledHero = styled.div`
     margin-right: 6rem;
 
     text-align: right;
+
+    @media ${breakpoint.device.lg} {
+      margin-top: 0;
+      margin-right: 4rem;
+    }
   }
 
   h1 {
     color: ${(props) => props.theme.white};
+
+    @media ${breakpoint.device.lg} {
+      font-size: 2.8rem;
+    }
   }
 `;

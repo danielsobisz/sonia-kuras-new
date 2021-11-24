@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "gatsby";
-import scrollTo from "gatsby-plugin-smoothscroll";
+import { AnchorLink } from "gatsby-plugin-anchor-links";
 
 import { StyledNav, StyledLi } from "./mainMenu.styles";
 
@@ -10,7 +10,12 @@ const MainMenu = ({ isActive }) => {
   const navItemsMapped = navItems?.map((item) => (
     <StyledLi isActive={isActive} key={item.name}>
       {item.asScrollTo ? (
-        <button onClick={() => scrollTo(item.href)}>{item.name}</button>
+         <AnchorLink
+         to={`/${item.href}`}
+         title={item.name}
+
+
+       />
       ) : (
         <Link to={item.href}>{item.name}</Link>
       )}

@@ -16,7 +16,7 @@ const Pricing = () => {
 
   return (
     <SectionWrapper>
-      <StyledContainer data-sal="slide-up" data-sal-duration="500">
+      <StyledContainer id="pricing" data-sal="slide-up" data-sal-duration="500">
         <Title title="Cennik" asMain />
 
         <StyledWrapper>{pricesDataMaped}</StyledWrapper>

@@ -1,8 +1,7 @@
 const navItems = [
   {
     name: "start",
-    href: "#",
-    asScrollTo: true,
+    href: "/",
   },
   {
     name: "kim jestem",

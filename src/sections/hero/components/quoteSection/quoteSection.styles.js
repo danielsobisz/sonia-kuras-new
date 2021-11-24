@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import breakpoint from "styles/breakpoints";
 
 export const StyledQuote = styled.div`
   display: flex;
@@ -9,10 +10,18 @@ export const StyledQuote = styled.div`
 
   background-color: ${(props) => props.theme.white};
 
+  @media ${breakpoint.device.m} {
+    padding: 3rem;
+  }
+
   .quote {
     text-align: center;
 
     font-size: 2.8rem;
+
+    @media ${breakpoint.device.lg} {
+      font-size: 2rem;
+    }
   }
 
   .author {

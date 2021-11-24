@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import breakpoint from 'styles/breakpoints';
 
 export const StyledNav = styled.nav`
   display: flex;
@@ -45,6 +46,10 @@ export const StyledLi = styled.li`
       &:after {
         width: 100%;
       }
+    }
+
+    @media ${breakpoint.device.lg} {
+      font-size: ${(props) => (props.isActive ? "1rem" : "1.4rem")};
     }
   }
 `;

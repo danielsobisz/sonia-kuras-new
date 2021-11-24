@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import breakpoint from "styles/breakpoints";
 
 export const StyledHeader = styled.header`
   position: fixed;
@@ -24,6 +25,6 @@ export const StyledHeader = styled.header`
     justify-content: space-between;
     align-items: center;
 
-    margin: ${(props) => (props.isActive ? "1rem 4rem" : "3rem 6rem")};
+    margin: 1rem 4rem;
   }
 `;

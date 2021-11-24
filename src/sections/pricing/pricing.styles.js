@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import breakpoint from "styles/breakpoints";
 
 export const StyledWrapper = styled.div`
   display: grid;
@@ -21,6 +22,10 @@ export const StyledPrice = styled.div`
 
   p:nth-of-type(1) {
     margin-right: 3rem;
+  }
+
+  @media ${breakpoint.device.m} {
+    font-size: 2.2rem;
   }
 `;
 

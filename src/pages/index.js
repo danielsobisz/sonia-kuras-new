@@ -10,6 +10,7 @@ import Contact from "sections/contact";
 
 import { theme } from "styles/theme";
 
+
 import GlobalStyle from "../styles/index.styles";
 
 const IndexPage = () => {

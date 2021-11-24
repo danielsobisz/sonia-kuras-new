@@ -12,9 +12,9 @@ export const StyledLogo = styled.div`
 
     color: ${(props) => props.theme.white};
 
-    transform: ${(props) =>
-      props.isActive ? "translateX(-500px)" : "translateX(0px)"};
-    transition: 0.4s;
+    opacity: ${(props) =>
+      props.isActive ? "0" : "1"};
+    transition: 0.2s;
 
     h2:nth-of-type(2) {
       margin-top: 0.4rem;
@@ -27,6 +27,12 @@ export const StyledLogo = styled.div`
     width: ${(props) => (props.isActive ? "6rem" : "12.5rem")};
     height: ${(props) => (props.isActive ? "6rem" : "12.5rem")};
 
-    transition: 0.4s;
+    transition: 0.6s;
+
+    svg {
+      width: 100%;
+      height: 100%;
+      fill: ${props => props.isActive ? props.theme.black : props.theme.white};
+    }
   }
 `;

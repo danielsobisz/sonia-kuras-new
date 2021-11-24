@@ -16,12 +16,6 @@ module.exports = {
     "gatsby-plugin-styled-components",
     "gatsby-plugin-image",
     "gatsby-plugin-react-helmet",
-    // {
-    //   resolve: "gatsby-plugin-manifest",
-    //   options: {
-    //     icon: "src/images/icon.png",
-    //   },
-    // },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -46,16 +40,27 @@ module.exports = {
         display: "swap",
       },
     },
-    `gatsby-plugin-smoothscroll`,
     {
       resolve: `gatsby-plugin-scroll-reveal`,
       options: {
         threshold: 0.1, // Percentage of an element's area that needs to be visible to launch animation
         once: true, // Defines if animation needs to be launched once
         disable: false, // Flag for disabling animations
-
-        // rootMargin: "0% 50%", // Corresponds to root's bounding box margin
       },
     },
+    {
+      resolve: "gatsby-plugin-react-svg",
+      options: {
+        rule: {
+          include: /assets/ // See below to configure properly
+        }
+      }
+    },
+    {
+      resolve: "gatsby-plugin-anchor-links",
+      options: {
+        offset: -80
+      }
+    }
   ],
 };
