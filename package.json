@@ -36,6 +36,7 @@
     "gatsby-plugin-styled-components": "^5.1.0",
     "gatsby-source-filesystem": "^4.1.0",
     "gatsby-source-wordpress": "^6.1.0",
+    "gatsby-transformer-json": "^4.2.0",
     "gatsby-transformer-sharp": "^4.2.0",
     "google-map-react": "^2.1.10",
     "react": "^17.0.1",

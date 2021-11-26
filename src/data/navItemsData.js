@@ -10,7 +10,8 @@ const navItems = [
   },
   {
     name: "oferta",
-    href: "offer",
+    href: "offer#offer",
+    asScrollTo: true,
   },
   {
     name: "cennik",

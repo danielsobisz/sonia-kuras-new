@@ -4,6 +4,9 @@ import { ThemeProvider } from "styled-components";
 
 import Header from "sections/header";
 import Hero from "sections/hero";
+import Offer from "sections/offer";
+
+import Footer from "components/footer";
 
 import { theme } from "styles/theme";
 
@@ -17,6 +20,10 @@ const OfferPage = () => {
       <Header />
 
       <Hero />
+
+      <Offer />
+
+      <Footer />
     </ThemeProvider>
   );
 };

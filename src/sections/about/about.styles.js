@@ -1,10 +1,15 @@
 import styled from "styled-components";
 import { StyledButton } from "components/button/button.styles.js";
+import breakpoint from "styles/breakpoints";
 
 export const StyledAbout = styled.div`
   display: flex;
 
   gap: 4rem;
+
+  @media ${breakpoint.device.s} {
+    flex-direction: column;
+  }
 `;
 
 export const StyledTextBox = styled.div`

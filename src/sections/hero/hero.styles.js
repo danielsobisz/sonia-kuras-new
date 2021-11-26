@@ -22,6 +22,10 @@ export const StyledHero = styled.div`
       margin-top: 0;
       margin-right: 4rem;
     }
+
+    @media ${breakpoint.device.m} {
+      margin-right: 2rem;
+    }
   }
 
   h1 {

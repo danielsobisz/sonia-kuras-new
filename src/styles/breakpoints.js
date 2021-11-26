@@ -1,13 +1,15 @@
 const size = {
-  xs: "320px",
+  s: "670px",
   m: "978px",
   lg: "1200px",
 };
 
 const device = {
-  xs: `(max-width: ${size.xs})`,
+  s: `(max-width: ${size.s})`,
   m: `(max-width: ${size.m})`,
   lg: `(max-width: ${size.lg})`,
 };
 
-export default { size, device };
+const breakpoints = { size, device };
+
+export default breakpoints;

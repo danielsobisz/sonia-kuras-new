@@ -8,6 +8,8 @@ export const StyledButton = styled.button`
 
   letter-spacing: 0.2rem;
 
+  height: 4rem;
+
   text-transform: uppercase;
 
   background-color: ${(props) => props.theme.green};

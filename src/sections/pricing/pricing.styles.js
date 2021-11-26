@@ -25,7 +25,13 @@ export const StyledPrice = styled.div`
   }
 
   @media ${breakpoint.device.m} {
-    font-size: 2.2rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    max-width: 100%;
+
+    font-size: 1.8rem;
   }
 `;
 

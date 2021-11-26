@@ -1,5 +1,6 @@
 import * as React from "react";
 import { ThemeProvider } from "styled-components";
+import { navigate } from "gatsby-link";
 
 import Header from "sections/header";
 import Hero from "sections/hero";
@@ -10,10 +11,15 @@ import Contact from "sections/contact";
 
 import { theme } from "styles/theme";
 
+import carouselData from "data/carouselData.json";
 
 import GlobalStyle from "../styles/index.styles";
 
 const IndexPage = () => {
+  const navigateToOffer = () => {
+    navigate("/offer");
+  };
+
   return (
     <ThemeProvider theme={theme}>
       <GlobalStyle />
@@ -24,11 +30,19 @@ const IndexPage = () => {
 
       <About />
 
-      <BackgroundSection img="dmt.jpg" title="Psychoterapia tańcem i ruchem" />
+      <BackgroundSection
+        img="dmt.jpg"
+        title="Psychoterapia tańcem i ruchem"
+        text={carouselData}
+      />
 
       <Pricing />
 
-      <BackgroundSection img="offer.jpg" title="Oferta" />
+      <BackgroundSection
+        img="offer.jpg"
+        title="Oferta"
+        onClick={navigateToOffer}
+      />
 
       <Contact />
     </ThemeProvider>

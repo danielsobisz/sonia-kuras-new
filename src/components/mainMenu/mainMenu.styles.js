@@ -1,12 +1,19 @@
 import styled from "styled-components";
-import breakpoint from 'styles/breakpoints';
+import breakpoint from "styles/breakpoints";
 
-export const StyledNav = styled.nav`
+const vertClassname = "is-vert";
+
+export const StyledNav = styled.nav.attrs({ vertClassname })`
   display: flex;
   align-items: center;
+
+  &.${vertClassname} {
+    flex-direction: column;
+    justify-content: space-between;
+  }
 `;
 
-export const StyledLi = styled.li`
+export const StyledLi = styled.li.attrs({ vertClassname })`
   margin: 0 1.2rem;
 
   a,
@@ -50,6 +57,15 @@ export const StyledLi = styled.li`
 
     @media ${breakpoint.device.lg} {
       font-size: ${(props) => (props.isActive ? "1rem" : "1.4rem")};
+    }
+  }
+
+  &.${vertClassname} {
+    margin: 3rem 0;
+    a {
+      font-size: 2.4rem;
+
+      color: ${(props) => props.theme.black};
     }
   }
 `;

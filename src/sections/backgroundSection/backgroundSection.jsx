@@ -10,9 +10,10 @@ import {
   StyledTextContent,
   StyledTitleWrapper,
   StyledButtonWrapper,
+  StyledSlide,
 } from "./backgroundSection.styles";
 
-const BackgroundSection = ({ title, content, img }) => {
+const BackgroundSection = ({ title, text, img, onClick }) => {
   // const slideFactory =
   return (
     <StaticQuery
@@ -34,35 +35,51 @@ const BackgroundSection = ({ title, content, img }) => {
         const bgImg = data.allImageSharp.edges.filter(
           (image) => image.node.fluid.originalName === img
         );
+
+        const slideFactory = text
+          ? text.map((item) => (
+              <StyledSlide>
+                <p>{item.text}</p>
+              </StyledSlide>
+            ))
+          : null;
+
         return (
           <StyledBackgroundSection img={bgImg[0].node.fluid.src}>
-            <div data-sal="slide-up" data-sal-duration="500">
-              <StyledTextContent>
-                <StyledTitleWrapper>
-                  <Title title={title} isWhite asMain />
-                </StyledTitleWrapper>
-
+            <StyledTextContent>
+              <StyledTitleWrapper>
+                <Title title={title} isWhite asMain />
+              </StyledTitleWrapper>
+              {slideFactory ? (
+                <Carousel
+                  slides={slideFactory}
+                  data-sal="slide-up"
+                  data-sal-duration="500"
+                />
+              ) : (
                 <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Tempore quis aut obcaecati commodi at amet veritatis ipsam
-                  cupiditate voluptas voluptates fugit, assumenda blanditiis
-                  laboriosam vitae quidem. Qui voluptate, nulla quos esse
-                  assumenda accusantium ducimus. Aliquam alias amet nostrum
-                  facere fuga laboriosam cum, quae ad ipsa doloribus consequatur
-                  omnis modi perferendis iure tenetur dolores, voluptatum
-                  eveniet! Dolores earum praesentium reiciendis aliquam nostrum!
-                  Consequuntur provident, doloremque ea doloribus in
-                  exercitationem asperiores minima quia enim. Iure, corporis sit
-                  explicabo ratione odit itaque fugit id tenetur recusandae
-                  quisquam nulla provident eius, fugiat tempora enim quo quas.
-                  Beatae neque, nisi iure officia atque quisquam distinctio!
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                  Magnam laboriosam velit alias repudiandae eveniet voluptates
+                  harum consectetur nesciunt numquam? Dignissimos quos ipsam
+                  libero reprehenderit vitae id, earum aut cumque perspiciatis
+                  iure, quae non veniam odio facilis molestiae dolore accusamus
+                  placeat sint. Ullam qui, blanditiis ipsam enim dicta
+                  doloremque commodi nemo error laboriosam. Blanditiis quia
+                  natus facere dolore beatae totam esse laboriosam placeat eum
+                  nesciunt iure ipsum obcaecati, reprehenderit corporis
+                  exercitationem laborum quos aperiam architecto nisi saepe aut
+                  quis enim minima. Voluptate reiciendis autem nam ex,
+                  blanditiis ad repellat quae sapiente. Fuga tempora deserunt
+                  officia fugiat repellendus eum corporis explicabo iusto?
                 </p>
-              </StyledTextContent>
+              )}
+            </StyledTextContent>
 
+            {onClick ? (
               <StyledButtonWrapper>
-                <Button>Poznaj ofertę</Button>
+                <Button onClick={onClick}>Poznaj ofertę</Button>
               </StyledButtonWrapper>
-            </div>
+            ) : null}
           </StyledBackgroundSection>
         );
       }}

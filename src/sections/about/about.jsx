@@ -28,12 +28,12 @@ const About = () => {
       `}
       render={(data) => (
         <SectionWrapper>
-          <StyledAbout id="about" data-sal="slide-up" data-sal-duration="1000">
-            <StyledFlexItem>
+          <StyledAbout id="about">
+            <StyledFlexItem data-sal="slide-up" data-sal-duration="500">
               <Img fluid={data.file.childImageSharp.fluid} />
             </StyledFlexItem>
 
-            <StyledFlexItem>
+            <StyledFlexItem data-sal="slide-up" data-sal-duration="500">
               <Title title="O byciu psycholożką i psychoterapeutką" />
 
               <StyledTextBox>
