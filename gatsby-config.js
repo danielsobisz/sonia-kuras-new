@@ -5,6 +5,7 @@ module.exports = {
     siteUrl: "https://www.yourdomain.tld",
     title: "Sonia Kuras",
   },
+  pathPrefix: "/sonia-kuras-new",
   plugins: [
     // {
     //   resolve: "gatsby-source-wordpress",
