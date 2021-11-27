@@ -1,6 +1,7 @@
 import React from "react";
 import { StaticQuery, graphql } from "gatsby";
 import Img from "gatsby-image";
+import { navigate } from "gatsby-link";
 
 import SectionWrapper from "components/sectionWrapper/sectionWrapper";
 import Title from "components/title";
@@ -51,7 +52,9 @@ const About = () => {
                 </p>
               </StyledTextBox>
 
-              <StyledButtonAbout>Więcej o mnie</StyledButtonAbout>
+              <StyledButtonAbout onClick={() => navigate("/about")}>
+                Więcej o mnie
+              </StyledButtonAbout>
             </StyledFlexItem>
           </StyledAbout>
         </SectionWrapper>
