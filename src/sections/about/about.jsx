@@ -21,7 +21,7 @@ const About = () => {
           file(relativePath: { eq: "about-pic.jpg" }) {
             childImageSharp {
               fluid {
-                ...GatsbyImageSharpFluid
+                ...GatsbyImageSharpFluid_noBase64
               }
             }
           }
