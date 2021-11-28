@@ -13,6 +13,19 @@ module.exports = {
     //     url: "http://www.soniakuras.com/graphql",
     //   },
     // },
+    {
+      resolve: `gatsby-source-facebook-graphql`,
+      options: {
+        // Facebook account or page ID
+        pageId: 102870105571124,
+        params: {
+          fields: ["name,events"],
+        },
+        // Access Token from facebook
+        accessToken:
+          "EAAmkBV5hGIsBAEBrZCxEPHeMGA5c4JJlN2j3DXtPFLTvZCgc7ZAfZB1aB9DkR36DnYWODQC7gfSmJmndlZB94jK6QuS3k5pTSZBUaEksywjC4UfgqZCzPu4GGKRQRPQzMoSZBMwmHubwbEt4gEGLpNPRVaW5a6SsO20WmYwvwfFnaNd3UUHN0juaGweg7ieB3PR4HcRAg7ZCLUSKzPblbzKKX",
+      },
+    },
     "gatsby-plugin-root-import",
     "gatsby-plugin-styled-components",
     "gatsby-plugin-image",
