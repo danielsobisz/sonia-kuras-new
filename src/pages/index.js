@@ -7,6 +7,7 @@ import Hero from "sections/hero";
 import About from "sections/about";
 import BackgroundSection from "sections/backgroundSection";
 import Pricing from "sections/pricing";
+import Events from "sections/events";
 import Contact from "sections/contact";
 
 import { theme } from "styles/theme";
@@ -43,6 +44,8 @@ const IndexPage = () => {
         title="Oferta"
         onClick={navigateToOffer}
       />
+
+      <Events />
 
       <Contact />
     </ThemeProvider>
