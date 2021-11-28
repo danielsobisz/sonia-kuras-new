@@ -4,6 +4,7 @@ import { faMapMarkerAlt } from "@fortawesome/free-solid-svg-icons";
 
 import SectionWrapper from "components/sectionWrapper";
 import Title from "components/title";
+import Address from "components/address";
 // import Map from "components/map";
 
 import {
@@ -18,6 +19,8 @@ const Contact = () => {
       <StyledWrapper id="contact">
         <StyledContactInfo>
           <Title title="Kontakt" asMain />
+
+          <Address />
 
           <StyledAddress>
             <FontAwesomeIcon icon={faMapMarkerAlt} />

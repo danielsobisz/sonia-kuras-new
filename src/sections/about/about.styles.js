@@ -7,7 +7,7 @@ export const StyledAbout = styled.div`
 
   gap: 4rem;
 
-  @media ${breakpoint.device.s} {
+  @media ${breakpoint.device.m} {
     flex-direction: column;
   }
 `;
