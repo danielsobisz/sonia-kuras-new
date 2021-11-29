@@ -31,7 +31,7 @@ export const StyledTextContent = styled.div`
   max-width: 120rem;
   margin: 0 3rem;
 
-  @media ${breakpoint.device.m} {
+  @media ${breakpoint.device.lg} {
     max-width: 100%;
   }
 
