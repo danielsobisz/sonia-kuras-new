@@ -11,3 +11,20 @@ export const StyledEvents = styled.div`
     grid-template-columns: 1fr;
   }
 `;
+
+export const StyledInfo = styled.div`
+  display: flex;
+  flex-direction: column;
+
+  justify-content: center;
+  align-items: center;
+  gap: 4rem;
+
+  p {
+    font-size: 4.8rem;
+  }
+
+  a {
+    color: ${(props) => props.theme.white};
+  }
+`;
