@@ -24,6 +24,7 @@
     "@googlemaps/react-wrapper": "^1.1.12",
     "@types/dotenv": "^8.2.0",
     "babel-plugin-styled-components": "^1.13.3",
+    "dayjs": "^1.10.7",
     "dayz": "^2.9.1",
     "gatsby": "^4.1.0",
     "gatsby-image": "^3.11.0",
