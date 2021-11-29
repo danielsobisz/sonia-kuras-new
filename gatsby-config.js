@@ -23,7 +23,7 @@ module.exports = {
         },
         // Access Token from facebook
         accessToken:
-          "EAAmkBV5hGIsBAEBrZCxEPHeMGA5c4JJlN2j3DXtPFLTvZCgc7ZAfZB1aB9DkR36DnYWODQC7gfSmJmndlZB94jK6QuS3k5pTSZBUaEksywjC4UfgqZCzPu4GGKRQRPQzMoSZBMwmHubwbEt4gEGLpNPRVaW5a6SsO20WmYwvwfFnaNd3UUHN0juaGweg7ieB3PR4HcRAg7ZCLUSKzPblbzKKX",
+          "EAAmkBV5hGIsBAIgXuIkBjgHDRgjZAaVMwoCpgwRxnkl69mq79OP6Al63pGobZC56aFx78sjYmztzPAwTjZCjFjNU2Jd6ZBh3CKMho3QHlE8YF5ekrQAZClW0BhZC8AU9n1EpoAfI8LGZCbesm814kGjV1EEwNZAZC331ANZBuTEsZCzNbyofTZCMMQZBO",
       },
     },
     "gatsby-plugin-root-import",
