@@ -52,10 +52,10 @@ const Offer = () => {
         ));
 
         return (
-          <StyledOffer id="offer">
-            <Title title="Oferta" asMain />
+          <StyledOffer>
+            {/* <Title title="Oferta" asMain /> */}
 
-            <StyledBar>{slidesMaped}</StyledBar>
+            {/* <StyledBar>{slidesMaped}</StyledBar> */}
 
             {offerDataMaped}
           </StyledOffer>

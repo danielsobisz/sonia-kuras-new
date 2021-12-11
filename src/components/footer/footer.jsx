@@ -2,16 +2,17 @@ import React from "react";
 import { navigate } from "gatsby-link";
 
 import Address from "components/address";
-import Button from "components/button";
 
-import { StyledFooter } from "./footer.styles";
+import { StyledFooter, StyledButton, StyledWrapper } from "./footer.styles";
 
 const Footer = () => {
   return (
     <StyledFooter>
-      <Address alignLeft />
+      <StyledWrapper>
+        <Address alignLeft />
 
-      <Button onClick={() => navigate(-1)}>Wróć</Button>
+        <StyledButton onClick={() => navigate("/")}>Wróć</StyledButton>
+      </StyledWrapper>
     </StyledFooter>
   );
 };

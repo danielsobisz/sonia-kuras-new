@@ -13,7 +13,7 @@ import {
   StyledSlide,
 } from "./backgroundSection.styles";
 
-const BackgroundSection = ({ title, text, img, onClick }) => {
+const BackgroundSection = ({ id, title, text, img, onClick }) => {
   // const slideFactory =
   return (
     <StaticQuery
@@ -45,7 +45,7 @@ const BackgroundSection = ({ title, text, img, onClick }) => {
           : null;
 
         return (
-          <StyledBackgroundSection img={bgImg[0].node.fluid.src}>
+          <StyledBackgroundSection img={bgImg[0].node.fluid.src} id={id}>
             <StyledTextContent>
               <StyledTitleWrapper>
                 <Title title={title} isWhite asMain />
