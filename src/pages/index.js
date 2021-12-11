@@ -18,7 +18,7 @@ import GlobalStyle from "../styles/index.styles";
 
 const IndexPage = () => {
   const navigateToOffer = () => {
-    navigate("/offer");
+    navigate("/offer#quote");
   };
 
   return (
@@ -32,6 +32,7 @@ const IndexPage = () => {
       <About />
 
       <BackgroundSection
+        id="dmt"
         img="dmt.jpg"
         title="Psychoterapia tańcem i ruchem"
         text={carouselData}

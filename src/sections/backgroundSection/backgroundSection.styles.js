@@ -28,7 +28,7 @@ export const StyledBackgroundSection = styled.section`
 export const StyledTextContent = styled.div`
   line-height: 3rem;
 
-  max-width: 120rem;
+  max-width: 80rem;
   margin: 0 3rem;
 
   @media ${breakpoint.device.lg} {

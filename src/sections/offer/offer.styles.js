@@ -2,7 +2,7 @@ import styled from "styled-components";
 import breakpoint from "styles/breakpoints";
 
 export const StyledOffer = styled.section`
-  margin-top: 8rem;
+  /* margin-top: 8rem; */
 `;
 
 export const StyledBar = styled.div`
@@ -24,7 +24,7 @@ export const StyledBar = styled.div`
 export const StyledContainer = styled.div`
   padding: 5rem 0;
 
-  &:nth-child(odd) {
+  &:nth-child(even) {
     background-color: ${(props) => props.theme.white};
 
     div div:nth-child(2) {

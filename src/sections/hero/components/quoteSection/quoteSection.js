@@ -4,7 +4,7 @@ import { StyledQuote } from "./quoteSection.styles";
 
 const QuoteSection = () => {
   return (
-    <StyledQuote>
+    <StyledQuote id="quote">
       <blockquote>
         <p className="quote">
           "Im lepiej rozumiesz siebie i swoje emocje, tym bardziej zaczynasz
