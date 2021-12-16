@@ -1,14 +1,14 @@
 export const pricesData = [
   {
-    title: "Konsultacja psychologiczna",
-    price: "170 zł / 75 min",
+    title: "Psychoterapia indywidualna",
+    price: "170 zł / 50 min",
   },
   {
-    title: "Pierwsza konsultacja",
-    price: "150 zł / 50 min",
+    title: "Sesja Ruchu Autentycznego",
+    price: "170 zł / 50 min",
   },
   {
-    title: "Sesja indywidualna",
-    price: "130 zł / 50 min",
+    title: "Psychoterapia dla kobiet w ciąży i diady (matka-niemowlę)",
+    price: "200 zł / 60 min",
   },
 ];

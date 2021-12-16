@@ -11,6 +11,7 @@ import {
   StyledTitleWrapper,
   StyledButtonWrapper,
   StyledSlide,
+  StyledText,
 } from "./backgroundSection.styles";
 
 const BackgroundSection = ({ id, title, text, img, onClick }) => {
@@ -39,7 +40,7 @@ const BackgroundSection = ({ id, title, text, img, onClick }) => {
         const slideFactory = text
           ? text.map((item) => (
               <StyledSlide>
-                <p>{item.text}</p>
+                <StyledText>{item.text}</StyledText>
               </StyledSlide>
             ))
           : null;
@@ -57,7 +58,7 @@ const BackgroundSection = ({ id, title, text, img, onClick }) => {
                   data-sal-duration="500"
                 />
               ) : (
-                <p>
+                <StyledText>
                   Lorem ipsum dolor sit, amet consectetur adipisicing elit.
                   Magnam laboriosam velit alias repudiandae eveniet voluptates
                   harum consectetur nesciunt numquam? Dignissimos quos ipsam
@@ -71,7 +72,7 @@ const BackgroundSection = ({ id, title, text, img, onClick }) => {
                   quis enim minima. Voluptate reiciendis autem nam ex,
                   blanditiis ad repellat quae sapiente. Fuga tempora deserunt
                   officia fugiat repellendus eum corporis explicabo iusto?
-                </p>
+                </StyledText>
               )}
             </StyledTextContent>
 

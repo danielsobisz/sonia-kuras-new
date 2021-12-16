@@ -20,7 +20,7 @@ export const StyledWrapper = styled.div`
   }
 
   p {
-    font-size: 2.4rem;
+    font-size: 1.8rem;
 
     line-height: 130%;
 

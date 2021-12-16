@@ -29,7 +29,6 @@ export const StyledTextContent = styled.div`
   line-height: 3rem;
 
   max-width: 80rem;
-  margin: 0 3rem;
 
   @media ${breakpoint.device.lg} {
     max-width: 100%;
@@ -67,5 +66,11 @@ export const StyledSlide = styled.div`
 
   p {
     color: ${(props) => props.theme.white};
+  }
+`;
+
+export const StyledText = styled.p`
+  @media ${breakpoint.device.m} {
+    margin: 0 2rem;
   }
 `;

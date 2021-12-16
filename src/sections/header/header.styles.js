@@ -36,3 +36,8 @@ export const StyledHeader = styled.header`
     }
   }
 `;
+
+export const Socials = styled.div`
+  display: flex;
+  gap: 2rem;
+`;

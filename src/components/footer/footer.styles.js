@@ -4,7 +4,8 @@ import breakpoint from "styles/breakpoints";
 import Button from "components/button";
 
 export const StyledFooter = styled.footer`
-  background-color: ${(props) => props.theme.white};
+  background-color: ${(props) =>
+    props.hasDiffBg ? props.theme.white : "transparent"};
 `;
 
 export const StyledWrapper = styled.div`
@@ -15,8 +16,12 @@ export const StyledWrapper = styled.div`
   align-items: center;
 
   max-width: 1440px;
-  width: 100%;
+  margin: 0 auto;
   padding: 0 2rem;
+
+  @media (min-width: 1440px) {
+    padding: 0;
+  }
 
   @media ${breakpoint.device.s} {
     flex-direction: column;
@@ -27,9 +32,13 @@ export const StyledWrapper = styled.div`
 export const StyledButton = styled(Button)`
   position: absolute;
   top: 50%;
-  right: 0;
+  right: 2rem;
 
   transform: translateY(-50%);
+
+  @media (min-width: 1440px) {
+    right: 0;
+  }
 
   @media ${breakpoint.device.s} {
     position: static;
