@@ -3,12 +3,13 @@ import React, { useState, useEffect } from "react";
 import Logo from "components/logo";
 import Hamburger from "components/hamburger";
 import Sidebar from "components/sidebar";
-
 import MainMenu from "components/mainMenu";
+
+import Social from "./components/social";
 
 import { IsBellowLaptop, IsAboveLaptop } from "styles/matchMedia";
 
-import { StyledHeader } from "./header.styles";
+import { StyledHeader, Socials } from "./header.styles";
 
 const Header = () => {
   const [isActive, setIsActive] = useState();
@@ -47,6 +48,11 @@ const Header = () => {
           />
           <Sidebar isActive={isSidebarActive} />
         </IsBellowLaptop>
+
+        <Socials>
+          <Social type="fb" isActive={isActive} />
+          <Social type="znanyLekarz" isActive={isActive} />
+        </Socials>
       </div>
     </StyledHeader>
   );
