@@ -10,16 +10,6 @@ module.exports = {
   },
   pathPrefix: "/sonia-kuras-new",
   plugins: [
-    {
-      resolve: `gatsby-source-facebook-graphql`,
-      options: {
-        pageId: 102870105571124,
-        params: {
-          fields: ["name,events"],
-        },
-        accessToken: process.env.FB_TOKEN,
-      },
-    },
     "gatsby-plugin-root-import",
     "gatsby-plugin-styled-components",
     "gatsby-plugin-image",
