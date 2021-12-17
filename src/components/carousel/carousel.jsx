@@ -10,7 +10,9 @@ import "swiper/css";
 import "swiper/css/pagination";
 
 const Carousel = ({ slides, slidesPerView }) => {
-  const slidesMaped = slides.map((slide) => <SwiperSlide>{slide}</SwiperSlide>);
+  const slidesMaped = slides.map((slide, i) => (
+    <SwiperSlide key={i}>{slide}</SwiperSlide>
+  ));
   SwiperCore.use([Pagination, Autoplay]);
 
   return (
