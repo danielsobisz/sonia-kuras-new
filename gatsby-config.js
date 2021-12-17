@@ -1,3 +1,6 @@
+require("dotenv").config({
+  path: `.env.${process.env.NODE_ENV}`,
+});
 const path = require(`path`);
 
 module.exports = {
@@ -7,25 +10,16 @@ module.exports = {
   },
   pathPrefix: "/sonia-kuras-new",
   plugins: [
-    // {
-    //   resolve: "gatsby-source-wordpress",
-    //   options: {
-    //     url: "http://www.soniakuras.com/graphql",
-    //   },
-    // },
-    // {
-    //   resolve: `gatsby-source-facebook-graphql`,
-    //   options: {
-    //     // Facebook account or page ID
-    //     pageId: 102870105571124,
-    //     params: {
-    //       fields: ["name,events"],
-    //     },
-    //     // Access Token from facebook
-    //     accessToken:
-    //       "EAAmkBV5hGIsBAIgXuIkBjgHDRgjZAaVMwoCpgwRxnkl69mq79OP6Al63pGobZC56aFx78sjYmztzPAwTjZCjFjNU2Jd6ZBh3CKMho3QHlE8YF5ekrQAZClW0BhZC8AU9n1EpoAfI8LGZCbesm814kGjV1EEwNZAZC331ANZBuTEsZCzNbyofTZCMMQZBO",
-    //   },
-    // },
+    {
+      resolve: `gatsby-source-facebook-graphql`,
+      options: {
+        pageId: 102870105571124,
+        params: {
+          fields: ["name,events"],
+        },
+        accessToken: process.env.FB_TOKEN,
+      },
+    },
     "gatsby-plugin-root-import",
     "gatsby-plugin-styled-components",
     "gatsby-plugin-image",

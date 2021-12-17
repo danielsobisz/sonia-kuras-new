@@ -20,6 +20,7 @@ const IndexPage = () => {
   const navigateToOffer = () => {
     navigate("/offer#quote");
   };
+  console.log(process.env.GATSBY_FB_TOKEN);
 
   return (
     <ThemeProvider theme={theme}>
