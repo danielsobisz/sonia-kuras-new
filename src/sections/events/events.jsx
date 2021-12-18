@@ -35,7 +35,7 @@ const Events = () => {
   return (
     <SectionWrapper>
       <Title title="Aktualności" asMain />
-      {data !== "undefined" && data.length > 0 ? (
+      {facebookData !== "undefined" && facebookData.length > 0 ? (
         <StyledEvents>{facebookDataMaped}</StyledEvents>
       ) : (
         <StyledInfo>
