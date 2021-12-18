@@ -20,7 +20,11 @@ const Events = () => {
     time: event.start_time,
   }));
 
-  const facebookDataMaped = facebookData?.map((event) => <Event {...event} />);
+  const facebookDataMaped =
+    (facebookData &&
+      facebookData.length > 0 &&
+      facebookData?.map((event) => <Event {...event} />)) ||
+    [];
 
   useEffect(() => {
     fetch(
@@ -35,7 +39,7 @@ const Events = () => {
   return (
     <SectionWrapper>
       <Title title="Aktualności" asMain />
-      {facebookData !== "undefined" && facebookData ? (
+      {facebookDataMaped && facebookDataMaped.length > 0 ? (
         <StyledEvents>{facebookDataMaped}</StyledEvents>
       ) : (
         <StyledInfo>
