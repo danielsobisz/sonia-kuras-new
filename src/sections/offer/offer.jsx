@@ -41,9 +41,9 @@ const Offer = () => {
           return images;
         });
 
-        const slidesMaped = slides.map((slide) => (
-          <Img fluid={slide.node.fluid} />
-        ));
+        // const slidesMaped = slides.map((slide) => (
+        //   <Img fluid={slide.node.fluid} />
+        // ));
 
         const offerDataMaped = offerData?.map((offer) => (
           <StyledContainer>
