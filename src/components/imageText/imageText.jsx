@@ -3,6 +3,7 @@ import { StaticQuery, graphql } from "gatsby";
 import Img from "gatsby-image";
 
 import Title from "components/title";
+import Video from "components/video";
 
 import {
   StyledContainer,
@@ -45,7 +46,11 @@ const ImageText = (props) => {
               </StyledText>
 
               <StyledImg>
-                <Img fluid={image[0].node.fluid} />
+                {props.video ? (
+                  <Video videoTitle={props.title} videoSrcURL={props.video} />
+                ) : (
+                  <Img fluid={image[0].node.fluid} />
+                )}
               </StyledImg>
             </StyledWrapper>
           </StyledContainer>
