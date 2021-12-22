@@ -6,7 +6,7 @@ import { StyledNav, StyledLi } from "./mainMenu.styles";
 
 import navItems from "data/navItemsData.js";
 
-const MainMenu = ({ isActive, isVert }) => {
+const MainMenu = ({ isActive, isVert, onClick }) => {
   const navItemsMapped = navItems?.map((item) => (
     <StyledLi
       className={isVert ? "is-vert" : null}
@@ -14,7 +14,9 @@ const MainMenu = ({ isActive, isVert }) => {
       key={item.name}
     >
       {item.asScrollTo ? (
-        <AnchorLink to={`/${item.href}`} title={item.name} />
+        <button onClick={onClick}>
+          <AnchorLink to={`/${item.href}`} title={item.name} />
+        </button>
       ) : (
         <Link to={item.href}>{item.name}</Link>
       )}

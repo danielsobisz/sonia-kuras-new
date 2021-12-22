@@ -11,6 +11,7 @@ export const StyledSidebar = styled.div.attrs({ activeClass })`
   width: 100%;
   max-width: 600px;
   height: 100%;
+  overflow-y: auto;
 
   background-color: ${(props) => props.theme.gray};
 
@@ -26,7 +27,10 @@ export const StyledInner = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
+  gap: 2rem;
 
   width: 100%;
   height: 100%;
+  margin-bottom: 2rem;
 `;
