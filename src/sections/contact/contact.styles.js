@@ -1,11 +1,12 @@
-import styled from "styled-components";
-import breakpoint from "styles/breakpoints";
+import styled from 'styled-components';
+import breakpoint from 'styles/breakpoints';
 
 export const StyledAddress = styled.address`
   margin-bottom: 2rem;
 
   text-align: center;
   font-style: normal;
+  font-size: 2rem;
 
   & > * {
     margin-bottom: 1.2rem;

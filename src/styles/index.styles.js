@@ -1,4 +1,4 @@
-import { createGlobalStyle } from "styled-components";
+import { createGlobalStyle } from 'styled-components';
 
 const GlobalStyle = createGlobalStyle`
   html {
@@ -19,12 +19,12 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 body {
   line-height: 1;
   font-size: 1.8rem;
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   background-color: ${(props) => props.theme.gray};
 }
 
 button {
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Open Sans', sans-serif;
 }
 
 ol, ul {

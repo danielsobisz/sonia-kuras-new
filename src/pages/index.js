@@ -1,26 +1,25 @@
-import * as React from "react";
-import { ThemeProvider } from "styled-components";
-import { navigate } from "gatsby-link";
+import * as React from 'react';
+import { ThemeProvider } from 'styled-components';
+import { navigate } from 'gatsby-link';
 
-import Header from "sections/header";
-import Hero from "sections/hero";
-import About from "sections/about";
-import BackgroundSection from "sections/backgroundSection";
-import Pricing from "sections/pricing";
-import Events from "sections/events";
-import Contact from "sections/contact";
+import Header from 'sections/header';
+import Hero from 'sections/hero';
+import About from 'sections/about';
+import BackgroundSection from 'sections/backgroundSection';
+import Pricing from 'sections/pricing';
+import Events from 'sections/events';
+import Contact from 'sections/contact';
 
-import { theme } from "styles/theme";
+import { theme } from 'styles/theme';
 
-import carouselData from "data/carouselData.json";
+import carouselData from 'data/carouselData.json';
 
-import GlobalStyle from "../styles/index.styles";
+import GlobalStyle from '../styles/index.styles';
 
 const IndexPage = () => {
   const navigateToOffer = () => {
-    navigate("/offer#quote");
+    navigate('/offer#quote');
   };
-  console.log(process.env.GATSBY_FB_TOKEN);
 
   return (
     <ThemeProvider theme={theme}>
@@ -34,18 +33,18 @@ const IndexPage = () => {
 
       <BackgroundSection
         id="dmt"
-        img="dmt.jpg"
+        color={theme.orange}
         title="Psychoterapia tańcem i ruchem"
         text={carouselData}
       />
 
-      <Pricing />
-
       <BackgroundSection
-        img="offer.jpg"
+        img="offer-bg.jpg"
         title="Oferta"
         onClick={navigateToOffer}
       />
+
+      <Pricing />
 
       <Events />
 

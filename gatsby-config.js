@@ -1,19 +1,19 @@
-require("dotenv").config({
+require('dotenv').config({
   path: `.env.${process.env.NODE_ENV}`,
 });
 const path = require(`path`);
 
 module.exports = {
   siteMetadata: {
-    siteUrl: "https://danielsobisz.github.io",
-    title: "Sonia Kuras",
+    siteUrl: 'https://danielsobisz.github.io',
+    title: 'Sonia Kuras',
   },
-  pathPrefix: "/sonia-kuras-new",
+  pathPrefix: '/sonia-kuras-new',
   plugins: [
-    "gatsby-plugin-root-import",
-    "gatsby-plugin-styled-components",
-    "gatsby-plugin-image",
-    "gatsby-plugin-react-helmet",
+    'gatsby-plugin-root-import',
+    'gatsby-plugin-styled-components',
+    'gatsby-plugin-image',
+    'gatsby-plugin-react-helmet',
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -21,16 +21,16 @@ module.exports = {
         path: path.join(__dirname, `src`, `images`),
       },
     },
-    "gatsby-plugin-sharp",
-    "gatsby-transformer-sharp",
-    "gatsby-transformer-json",
+    'gatsby-plugin-sharp',
+    'gatsby-transformer-sharp',
+    'gatsby-transformer-json',
     {
-      resolve: "gatsby-source-filesystem",
+      resolve: 'gatsby-source-filesystem',
       options: {
-        name: "images",
-        path: "./src/images/",
+        name: 'images',
+        path: './src/images/',
       },
-      __key: "images",
+      __key: 'images',
     },
     {
       resolve: `gatsby-source-filesystem`,
@@ -41,8 +41,14 @@ module.exports = {
     {
       resolve: `gatsby-plugin-google-fonts`,
       options: {
-        fonts: ["Raleway", "Arima Madurai", "Bree Serif"],
-        display: "swap",
+        fonts: [
+          'Cinzel',
+          'Raleway',
+          'Arima Madurai',
+          'Bree Serif',
+          'Open Sans',
+        ],
+        display: 'swap',
       },
     },
     {
@@ -54,7 +60,7 @@ module.exports = {
       },
     },
     {
-      resolve: "gatsby-plugin-react-svg",
+      resolve: 'gatsby-plugin-react-svg',
       options: {
         rule: {
           include: /assets/, // See below to configure properly
@@ -62,9 +68,9 @@ module.exports = {
       },
     },
     {
-      resolve: "gatsby-plugin-anchor-links",
+      resolve: 'gatsby-plugin-anchor-links',
       options: {
-        offset: -120,
+        offset: -80,
       },
     },
   ],

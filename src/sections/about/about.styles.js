@@ -1,6 +1,6 @@
-import styled from "styled-components";
-import { StyledButton } from "components/button/button.styles.js";
-import breakpoint from "styles/breakpoints";
+import styled from 'styled-components';
+import { StyledButton } from 'components/button/button.styles.js';
+import breakpoint from 'styles/breakpoints';
 
 export const StyledAbout = styled.div`
   display: flex;
@@ -16,9 +16,13 @@ export const StyledTextBox = styled.div`
   flex-basis: 50%;
 
   padding: 3rem;
-  margin-top: 3rem;
+  margin-top: 5rem;
 
   border: 0.1rem solid ${(props) => props.theme.black};
+
+  @media ${breakpoint.device.s} {
+    padding: 1.5rem;
+  }
 
   p {
     line-height: 3rem;
@@ -27,10 +31,6 @@ export const StyledTextBox = styled.div`
 
 export const StyledFlexItem = styled.div`
   flex-basis: 50%;
-
-  &:nth-child(2) {
-    margin-top: 4rem;
-  }
 `;
 
 export const StyledButtonAbout = styled(StyledButton)`

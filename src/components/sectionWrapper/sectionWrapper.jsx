@@ -1,9 +1,9 @@
-import React from "react";
+import React from 'react';
 
-import { StyledSection } from "./sectionWrapper.styles";
+import { StyledSection } from './sectionWrapper.styles';
 
-const SectionWrapper = ({ children }) => {
-  return <StyledSection>{children}</StyledSection>;
+const SectionWrapper = ({ children, isWhite }) => {
+  return <StyledSection isWhite={isWhite}>{children}</StyledSection>;
 };
 
 export default SectionWrapper;

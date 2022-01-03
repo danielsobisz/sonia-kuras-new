@@ -1,17 +1,17 @@
-import React from "react";
-import { StaticQuery, graphql } from "gatsby";
-import Img from "gatsby-image";
-import { navigate } from "gatsby-link";
+import React from 'react';
+import { StaticQuery, graphql } from 'gatsby';
+import Img from 'gatsby-image';
+import { navigate } from 'gatsby-link';
 
-import SectionWrapper from "components/sectionWrapper/sectionWrapper";
-import Title from "components/title";
+import SectionWrapper from 'components/sectionWrapper/sectionWrapper';
+import Title from 'components/title';
 
 import {
   StyledAbout,
   StyledTextBox,
   StyledFlexItem,
   StyledButtonAbout,
-} from "./about.styles";
+} from './about.styles';
 
 const About = () => {
   return (
@@ -52,7 +52,7 @@ const About = () => {
                 </p>
               </StyledTextBox>
 
-              <StyledButtonAbout onClick={() => navigate("/about")}>
+              <StyledButtonAbout onClick={() => navigate('/about#quote')}>
                 Więcej o mnie
               </StyledButtonAbout>
             </StyledFlexItem>

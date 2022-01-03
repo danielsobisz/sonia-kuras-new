@@ -1,14 +1,14 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect } from 'react';
 
-import Logo from "components/logo";
-import Hamburger from "components/hamburger";
-import Sidebar from "components/sidebar";
-import MainMenu from "components/mainMenu";
-import Socials from "components/socials";
+import Logo from 'components/logo';
+import Hamburger from 'components/hamburger';
+import Sidebar from 'components/sidebar';
+import MainMenu from 'components/mainMenu';
+import Socials from 'components/socials';
 
-import { IsBellowLaptop, IsAboveLaptop } from "styles/matchMedia";
+import { IsBellowLaptop, IsAboveLaptop } from 'styles/matchMedia';
 
-import { StyledHeader } from "./header.styles";
+import { StyledHeader } from './header.styles';
 
 const Header = () => {
   const [isActive, setIsActive] = useState();
@@ -25,7 +25,7 @@ const Header = () => {
   const setSidebar = () => setIsSidebarActive(!isSidebarActive);
 
   useEffect(() => {
-    window.addEventListener("scroll", () => {
+    window.addEventListener('scroll', () => {
       setOnScroll();
     });
   }, []);
@@ -35,22 +35,16 @@ const Header = () => {
       <div className="inner">
         <Logo isActive={isActive} />
 
-        <IsAboveLaptop>
+        {/* <IsAboveLaptop>
           <MainMenu isActive={isActive} />
-        </IsAboveLaptop>
+        </IsAboveLaptop> */}
 
-        <IsBellowLaptop>
-          <Hamburger
-            onClick={setSidebar}
-            isSidebarActive={isSidebarActive}
-            isActive={isActive}
-          />
-          <Sidebar isActive={isSidebarActive} onClick={setSidebar} />
-        </IsBellowLaptop>
-
-        <IsAboveLaptop>
-          <Socials isActive={isActive} />
-        </IsAboveLaptop>
+        <Hamburger
+          onClick={setSidebar}
+          isSidebarActive={isSidebarActive}
+          isActive={isActive}
+        />
+        <Sidebar isActive={isSidebarActive} onClick={setSidebar} />
       </div>
     </StyledHeader>
   );

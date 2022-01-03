@@ -1,14 +1,14 @@
-import React, { useState, useRef, useEffect } from "react";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faMapMarkerAlt } from "@fortawesome/free-solid-svg-icons";
+import React, { useState, useRef, useEffect } from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faMapMarkerAlt } from '@fortawesome/free-solid-svg-icons';
 
-import SectionWrapper from "components/sectionWrapper";
-import Social from "components/social";
-import Title from "components/title";
-import Address from "components/address";
-import Map from "components/map";
+import SectionWrapper from 'components/sectionWrapper';
+import Social from 'components/social';
+import Title from 'components/title';
+import Address from 'components/address';
+import Map from 'components/map';
 
-import socialData from "data/socialData.json";
+import socialData from 'data/socialData.json';
 
 import {
   StyledContactInfo,
@@ -17,7 +17,7 @@ import {
   StyledAddress,
   StyledWrapper,
   StyledMapContainer,
-} from "./contact.styles";
+} from './contact.styles';
 
 const Contact = () => {
   // const socialDataMaped = socialData?.map((item) => <Social {...item} />);
@@ -26,13 +26,13 @@ const Contact = () => {
     <StyledContact>
       <StyledWrapper id="contact">
         <StyledContactInfo>
-          <Title title="Kontakt" asMain />
+          <Title title="Kontakt" asContact asMain />
 
           {/* <StyledSocials>{socialDataMaped}</StyledSocials> */}
 
-          <Address />
-
           <StyledAddress>
+            <p>Sonia Kuraś</p>
+            <Address />
             <FontAwesomeIcon icon={faMapMarkerAlt} />
             <p>ul. Klonowa 1</p>
             <p>Gdańsk-Wrzeszcz (przy dworcu PKP i SKM),</p>

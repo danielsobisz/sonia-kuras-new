@@ -1,14 +1,15 @@
-import styled from "styled-components";
-import breakpoint from "styles/breakpoints";
+import styled from 'styled-components';
+import breakpoint from 'styles/breakpoints';
+
+import Title from 'components/title';
 
 export const StyledEvent = styled.div`
   display: flex;
   justify-content: space-between;
 
-  width: 55rem;
-  height: 23rem;
+  width: 40rem;
 
-  background-color: ${(props) => props.theme.white};
+  background-color: ${(props) => props.theme.white2};
 
   @media ${breakpoint.device.s} {
     flex-direction: column;
@@ -33,15 +34,15 @@ export const StyledDate = styled.div`
   }
 
   span {
-    font-family: "Bree Serif", sans-serif;
+    font-family: 'Bree Serif', sans-serif;
   }
 
   span:nth-of-type(1) {
-    font-size: 14rem;
+    font-size: 8rem;
   }
 
   span:nth-of-type(2) {
-    font-size: 4.8rem;
+    font-size: 3.2rem;
 
     text-transform: uppercase;
   }
@@ -87,13 +88,14 @@ export const StyledInfo = styled.div`
 
   p {
     position: relative;
+    font-size: 1.2rem;
 
     margin-bottom: 1.2rem;
     padding-left: 1rem;
   }
 
   p:before {
-    content: "";
+    content: '';
 
     position: absolute;
     top: 0;
@@ -106,4 +108,8 @@ export const StyledInfo = styled.div`
 
     background-color: ${(props) => props.theme.black};
   }
+`;
+
+export const StyledTitle = styled(Title)`
+  margin-bottom: 2rem;
 `;

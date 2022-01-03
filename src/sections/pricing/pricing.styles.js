@@ -1,5 +1,5 @@
-import styled from "styled-components";
-import breakpoint from "styles/breakpoints";
+import styled from 'styled-components';
+import breakpoint from 'styles/breakpoints';
 
 export const StyledWrapper = styled.div`
   display: grid;
@@ -15,6 +15,7 @@ export const StyledPrice = styled.div`
   justify-content: space-between;
 
   font-size: 2.8rem;
+  text-align: center;
 
   &:not(:last-child) {
     margin-bottom: 2rem;

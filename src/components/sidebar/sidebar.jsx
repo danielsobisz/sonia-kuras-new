@@ -1,16 +1,16 @@
-import React from "react";
+import React from 'react';
 
-import MainMenu from "components/mainMenu";
-import Socials from "components/socials";
+import MainMenu from 'components/mainMenu';
+import Socials from 'components/socials';
 
-import { StyledSidebar, StyledInner } from "./sidebar.styles";
+import { StyledSidebar, StyledInner } from './sidebar.styles';
 
 const Sidebar = ({ isActive, onClick }) => {
   return (
-    <StyledSidebar className={isActive ? "active" : null}>
+    <StyledSidebar className={isActive ? 'active' : null}>
       <StyledInner>
         <MainMenu isVert onClick={onClick} />
-        <Socials isActive />
+        {/* <Socials isActive /> */}
       </StyledInner>
     </StyledSidebar>
   );
