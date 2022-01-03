@@ -1,11 +1,11 @@
-import React from "react";
+import React from 'react';
 
-import { StyledButton } from "./button.styles";
+import { StyledButton } from './button.styles';
 
-const Button = ({ className, children, onClick }) => {
+const Button = ({ className, children, onClick, href }) => {
   return (
     <StyledButton className={className} onClick={onClick}>
-      {children}
+      {href ? <a href={href}>{children}</a> : children}
     </StyledButton>
   );
 };

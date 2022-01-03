@@ -1,10 +1,10 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
 export const StyledButton = styled.button`
   padding: 1rem 4rem;
 
   font-size: 1.8rem;
-  font-family: "Raleway", sans-serif;
+  font-family: 'Raleway', sans-serif;
 
   letter-spacing: 0.2rem;
 
@@ -12,7 +12,7 @@ export const StyledButton = styled.button`
 
   text-transform: uppercase;
 
-  background-color: ${(props) => props.theme.green};
+  background-color: ${(props) => props.theme.orange};
   color: ${(props) => props.theme.white};
   border: 0.1rem solid transparent;
 
@@ -22,7 +22,11 @@ export const StyledButton = styled.button`
 
   &:hover {
     background-color: ${(props) => props.theme.white};
-    color: ${(props) => props.theme.green};
-    border-color: ${(props) => props.theme.green};
+    color: ${(props) => props.theme.orange};
+    border-color: ${(props) => props.theme.orange};
+
+    a {
+      color: ${(props) => props.theme.orange};
+    }
   }
 `;

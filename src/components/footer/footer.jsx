@@ -1,17 +1,14 @@
-import React from "react";
-import { navigate } from "gatsby-link";
+import React from 'react';
 
-import Address from "components/address";
+import Address from 'components/address';
 
-import { StyledFooter, StyledButton, StyledWrapper } from "./footer.styles";
+import { StyledFooter, StyledButton, StyledWrapper } from './footer.styles';
 
 const Footer = () => {
   return (
     <StyledFooter>
       <StyledWrapper>
-        <Address alignLeft />
-
-        <StyledButton onClick={() => navigate("/")}>Wróć</StyledButton>
+        <Address />
       </StyledWrapper>
     </StyledFooter>
   );

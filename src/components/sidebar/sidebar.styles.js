@@ -1,6 +1,6 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
-const activeClass = "active";
+const activeClass = 'active';
 
 export const StyledSidebar = styled.div.attrs({ activeClass })`
   position: fixed;
@@ -9,13 +9,13 @@ export const StyledSidebar = styled.div.attrs({ activeClass })`
   bottom: 0;
 
   width: 100%;
-  max-width: 600px;
+  max-width: 40rem;
   height: 100%;
   overflow-y: auto;
 
-  background-color: ${(props) => props.theme.gray};
+  background-color: rgba(231, 231, 231, 0.6);
 
-  transform: translateX(80rem);
+  transform: translateX(60rem);
   transition: transform 0.4s;
 
   &.${activeClass} {

@@ -1,25 +1,20 @@
-import styled from "styled-components";
-import breakpoint from "styles/breakpoints";
+import styled from 'styled-components';
+import breakpoint from 'styles/breakpoints';
 
 export const StyledHamburger = styled.div`
   position: relative;
   z-index: 99;
 
-  width: 60px;
-  height: 45px;
+  width: 4rem;
+  height: 2.5rem;
 
   transform: rotate(0deg);
   transition: 0.5s ease-in-out;
 
   cursor: pointer;
-
-  @media ${breakpoint.device.s} {
-    width: 40px;
-    height: 35px;
-  }
 `;
 
-const activeClassName = "active";
+const activeClassName = 'active';
 export const StyledBar = styled.div.attrs({ activeClassName })`
   position: absolute;
   left: 0;
@@ -27,7 +22,7 @@ export const StyledBar = styled.div.attrs({ activeClassName })`
   display: block;
   opacity: 1;
 
-  height: 4px;
+  height: 0.1rem;
   width: 100%;
 
   background: ${(props) =>
@@ -43,15 +38,11 @@ export const StyledBar = styled.div.attrs({ activeClassName })`
 
   &:nth-child(2),
   &:nth-child(3) {
-    top: 18px;
-
-    @media ${breakpoint.device.s} {
-      top: 12px;
-    }
+    top: 12px;
   }
 
   &:nth-child(4) {
-    top: 36px;
+    top: 24px;
 
     @media ${breakpoint.device.s} {
       top: 24px;

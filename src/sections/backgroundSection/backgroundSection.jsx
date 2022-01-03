@@ -1,9 +1,9 @@
-import React from "react";
-import { StaticQuery, graphql } from "gatsby";
+import React from 'react';
+import { StaticQuery, graphql } from 'gatsby';
 
-import Title from "components/title";
-import Carousel from "components/carousel";
-import Button from "components/button";
+import Title from 'components/title';
+import Carousel from 'components/carousel';
+import Button from 'components/button';
 
 import {
   StyledBackgroundSection,
@@ -12,9 +12,10 @@ import {
   StyledButtonWrapper,
   StyledSlide,
   StyledText,
-} from "./backgroundSection.styles";
+  StyledBackgroundBlur,
+} from './backgroundSection.styles';
 
-const BackgroundSection = ({ id, title, text, img, onClick }) => {
+const BackgroundSection = ({ id, title, text, img, onClick, color }) => {
   // const slideFactory =
   return (
     <StaticQuery
@@ -46,7 +47,17 @@ const BackgroundSection = ({ id, title, text, img, onClick }) => {
           : null;
 
         return (
-          <StyledBackgroundSection img={bgImg[0].node.fluid.src} id={id}>
+          <StyledBackgroundSection
+            img={img ? bgImg[0].node.fluid.src : null}
+            color={color}
+            id={id}
+          >
+            {img ? (
+              <StyledBackgroundBlur
+                img={img ? bgImg[0].node.fluid.src : null}
+              />
+            ) : null}
+
             <StyledTextContent>
               <StyledTitleWrapper>
                 <Title title={title} isWhite asMain />

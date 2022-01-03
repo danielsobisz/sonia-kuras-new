@@ -1,10 +1,16 @@
-import React from "react";
+import React from 'react';
 
-import { StyledTitle } from "./title.styles";
+import { StyledTitle } from './title.styles';
 
-const Title = ({ isWhite, title, asMain }) => {
+const Title = ({ isWhite, title, asMain, asContact, isSmaller, className }) => {
   return (
-    <StyledTitle isWhite={isWhite} asMain={asMain}>
+    <StyledTitle
+      className={className}
+      isWhite={isWhite}
+      asMain={asMain}
+      asContact={asContact}
+      isSmaller={isSmaller}
+    >
       {title}
     </StyledTitle>
   );

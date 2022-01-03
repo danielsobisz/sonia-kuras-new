@@ -1,5 +1,5 @@
-import styled from "styled-components";
-import breakpoint from "styles/breakpoints";
+import styled from 'styled-components';
+import breakpoint from 'styles/breakpoints';
 
 export const StyledEvents = styled.div`
   display: grid;
@@ -21,7 +21,7 @@ export const StyledInfo = styled.div`
   gap: 4rem;
 
   p {
-    font-size: 4.8rem;
+    font-size: 2.4rem;
   }
 
   a {

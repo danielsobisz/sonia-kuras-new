@@ -1,8 +1,8 @@
-import React from "react";
+import React from 'react';
 
-import QuoteSection from "./components/quoteSection";
+import QuoteSection from './components/quoteSection';
 
-import { StyledHero } from "./hero.styles";
+import { StyledHero } from './hero.styles';
 
 const Hero = () => {
   return (

@@ -1,15 +1,21 @@
-import React from "react";
-import { StaticQuery, graphql } from "gatsby";
-import Img from "gatsby-image";
+import React from 'react';
+import { StaticQuery, graphql } from 'gatsby';
+import Img from 'gatsby-image';
+import { navigate } from 'gatsby-link';
 
-import SectionWrapepr from "components/sectionWrapper";
-import Title from "components/title";
+import SectionWrapper from 'components/sectionWrapper';
+import Title from 'components/title';
 
-import TextBlock from "./components/textBlock/textBlock";
+import TextBlock from './components/textBlock/textBlock';
 
-import aboutData from "data/aboutData.json";
+import aboutData from 'data/aboutData.json';
 
-import { StyledWrapper, StyledImg, StyledContent } from "./bio.styles";
+import {
+  StyledWrapper,
+  StyledImg,
+  StyledContent,
+  StyledButton,
+} from './bio.styles';
 
 const Bio = () => {
   return (
@@ -27,19 +33,24 @@ const Bio = () => {
       `}
       render={(data) => {
         return (
-          <SectionWrapepr>
+          <SectionWrapper>
             <StyledWrapper>
               <StyledImg>
                 <Img fluid={data.file.childImageSharp.fluid} />
               </StyledImg>
               <StyledContent>
-                <Title title="Słów kilka o kwalifikacjach i doświadczeniu" />
-                {aboutData.map((item) => (
+                {aboutData.first.map((item) => (
                   <TextBlock content={item.content} title={item.title} />
                 ))}
               </StyledContent>
             </StyledWrapper>
-          </SectionWrapepr>
+            <StyledContent>
+              {aboutData.second.map((item) => (
+                <TextBlock content={item.content} title={item.title} />
+              ))}
+            </StyledContent>
+            <StyledButton onClick={() => navigate(-1)}>Wróć</StyledButton>
+          </SectionWrapper>
         );
       }}
     />

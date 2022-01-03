@@ -1,16 +1,16 @@
-import React from "react";
+import React from 'react';
 
-import { ThemeProvider } from "styled-components";
+import { ThemeProvider } from 'styled-components';
 
-import Header from "sections/header";
-import Hero from "sections/hero";
-import Bio from "sections/bio";
+import Header from 'sections/header';
+import Hero from 'sections/hero';
+import Bio from 'sections/bio';
 
-import Footer from "components/footer";
+import Footer from 'components/footer';
 
-import { theme } from "styles/theme";
+import { theme } from 'styles/theme';
 
-import GlobalStyle from "../styles/index.styles";
+import GlobalStyle from '../styles/index.styles';
 
 const About = () => {
   return (
