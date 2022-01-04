@@ -1,62 +1,27 @@
 [
   {
     "title": "Psychoterapia indywidualna",
-    "desc": [
-      {
-        "text": "Psychoterapia indywidualna jest bezpieczną przestrzenią do odkrywania i przyglądania się sobie, zbudowaną w oparciu o pełnię uwagi terapeuty i nawiązanej relacji terapeutycznej."
-      },
-      {
-        "text": "Każdy proces terapeutyczny rozpoczyna się od 3-5 konsultacji. W tym czasie oboje mamy możliwość lepiej poznać siebie, swoje oczekiwania,  a także doświadczyć jak może wyglądać praca terapeutyczna w nurcie psychoterapii tańcem i ruchem. W trakcie tych spotkań proponuje warunki współpracy, wtedy również ustalany jest cel spotkań."
-      },
-      {
-        "text": "W zależności od  potrzeb klienta, wnoszonych treści oraz etapu procesu, proponuję różne metody terapeutyczne, które najlepiej odpowiadają potrzebom klienta."
-      },
-      {
-        "text": "Alternatywnie jako formę wspierającą proces terapii oferuję indywidualne sesje praktyki ruchowej w oparciu o metody psychoterapii tańcem i ruchem, Ruch Autentyczny, Laban Bartenieff Movement System. Może również występować jako niezależna forma rozwoju osobistego."
-      }
-    ],
+    "text": "<p>Psychoterapia indywidualna jest bezpieczną przestrzenią do odkrywania i przyglądania się sobie, zbudowaną w oparciu o pełnię uwagi terapeuty i nawiązanej relacji terapeutycznej.</p><p>Każdy proces terapeutyczny rozpoczyna się od 3-5 konsultacji. W tym czasie oboje mamy możliwość lepiej poznać siebie, swoje oczekiwania,  a także doświadczyć jak może wyglądać praca terapeutyczna w nurcie psychoterapii tańcem i ruchem. W trakcie tych spotkań proponuje warunki współpracy, wtedy również ustalany jest cel spotkań.</p><p>W zależności od  potrzeb klienta, wnoszonych treści oraz etapu procesu, proponuję różne metody terapeutyczne, które najlepiej odpowiadają potrzebom klienta.</p><p>Alternatywnie jako formę wspierającą proces terapii oferuję indywidualne sesje praktyki ruchowej w oparciu o metody psychoterapii tańcem i ruchem, Ruch Autentyczny, Laban Bartenieff Movement System. Może również występować jako niezależna forma rozwoju osobistego.</p>",
     "pic": "invidual.jpg"
   },
   {
     "title": "Psychoterapia grupowa",
-    "desc": [
-      {
-        "text": "Jest formą, która daje możliwości poznania siebie w oparciu o obserwację własnych przeżyć i doświadczeń, nie tylko w kontakcie z terapeutą (tak jak jest to w terapii indywidualnej), lecz również w oparciu o własne odczucia i reakcje pojawiające się w relacji z innymi uczestnikami. Obecność innych osób pozwala lepiej zrozumieć przyjmowane przez siebie role w grupie. Najczęściej zalecana w sytuacji, gdy osoba zgłasza różne trudności  interpersonalne pojawiające się w odmiennych sytuacjach społecznych."
-      },
-      {
-        "text": "Psychoterapia grupowa prowadzona metodą psychoterapii tańcem i ruchem opiera się na łączeniu doświadczeń ruchowych z werbalną wymianą miedzy uczestnikami."
-      }
-    ],
+    "text": "<p>Jest formą, która daje możliwości poznania siebie w oparciu o obserwację własnych przeżyć i doświadczeń, nie tylko w kontakcie z terapeutą (tak jak jest to w terapii indywidualnej), lecz również w oparciu o własne odczucia i reakcje pojawiające się w relacji z innymi uczestnikami. Obecność innych osób pozwala lepiej zrozumieć przyjmowane przez siebie role w grupie. Najczęściej zalecana w sytuacji, gdy osoba zgłasza różne trudności  interpersonalne pojawiające się w odmiennych sytuacjach społecznych.</p><p>Psychoterapia grupowa prowadzona metodą psychoterapii tańcem i ruchem opiera się na łączeniu doświadczeń ruchowych z werbalną wymianą miedzy uczestnikami.</p>",
     "pic": "group.jpg"
   },
   {
     "title": "Zakres Pomocy",
-    "desc": [
-      {
-        "text": "Jest formą, która daje możliwości poznania siebie w oparciu o obserwację własnych przeżyć i doświadczeń, nie tylko w kontakcie z terapeutą (tak jak jest to w terapii indywidualnej), lecz również w oparciu o własne odczucia i reakcje pojawiające się w relacji z innymi uczestnikami. Obecność innych osób pozwala lepiej zrozumieć przyjmowane przez siebie role przez w grupie. Najczęściej zalecana w sytuacji, gdy osoba doświadcza trudności bycia w grupie, chce poprawić jakość swoich kontaktów interpersonalnych, zgłasza różne trudności pojawiające się w odmiennych sytuacjach społecznych."
-      }
-    ],
+    "text": "<p>Jest formą, która daje możliwości poznania siebie w oparciu o obserwację własnych przeżyć i doświadczeń, nie tylko w kontakcie z terapeutą (tak jak jest to w terapii indywidualnej), lecz również w oparciu o własne odczucia i reakcje pojawiające się w relacji z innymi uczestnikami. Obecność innych osób pozwala lepiej zrozumieć przyjmowane przez siebie role przez w grupie. Najczęściej zalecana w sytuacji, gdy osoba doświadcza trudności bycia w grupie, chce poprawić jakość swoich kontaktów interpersonalnych, zgłasza różne trudności pojawiające się w odmiennych sytuacjach społecznych.</p>",
     "pic": "lake.jpg"
   },
   {
     "title": "Ruch autentyczny",
-    "desc": [
-      {
-        "text": "Ruch Autentyczny to narzędzie z wieloletnią tradycją i ze ściśle określonym zastosowaniem. Często przysłowiowo określany jest mianem psychoanalizy w ruchu lub medytacją w ruchu. Swobodny, intuicyjny ruch wykorzystywany jest do łączenia odczuć z ciała, emocji i myśli. Następnie zostaje wykorzystany do interpretacji życiowych doświadczeń."
-      },
-      {
-        "text": "Prekursorką Ruchu Autentycznego była Mary Whitehouse, a jej prace kontynuowała i rozwinęła Janet Adler."
-      }
-    ],
-    "video": "https://www.youtube.com/embed/PvxN-vUFRzM"
+    "text": "<p>Ruch Autentyczny to narzędzie z wieloletnią tradycją i ze ściśle określonym zastosowaniem. Często przysłowiowo określany jest mianem psychoanalizy w ruchu lub medytacją w ruchu. Swobodny, intuicyjny ruch wykorzystywany jest do łączenia odczuć z ciała, emocji i myśli. Następnie zostaje wykorzystany do interpretacji życiowych doświadczeń.</p><p>Prekursorką Ruchu Autentycznego była Mary Whitehouse, a jej prace kontynuowała i rozwinęła Janet Adler.</p>",
+    "pic": "lake.jpg"
   },
   {
     "title": "Psychoterapia dla kobiet w ciąży i diady (matka-niemowlę)",
-    "desc": [
-      {
-        "text": "Jest propozycją dla kobiet w ciąży, które doświadczają wielu intensywnych emocji związanych z byciem w ciąży. Dla kobiet które straciły dziecko. Dla kobiet które przeżywają intensywne emocje związane z nowa rola bycia mama i czuja się obciążone psychoterapię z udziałem niemowlęcia. Do współpracy zapraszam również ojców, którzy borykają się z jakimiś trudnościami, które pojawiły się w kontekście ciąży."
-      }
-    ],
+    "text": "<p>Jest propozycją dla kobiet w ciąży, które doświadczają wielu intensywnych emocji związanych z byciem w ciąży. Dla kobiet które straciły dziecko. Dla kobiet które przeżywają intensywne emocje związane z nowa rola bycia mama i czuja się obciążone psychoterapię z udziałem niemowlęcia. Do współpracy zapraszam również ojców, którzy borykają się z jakimiś trudnościami, które pojawiły się w kontekście ciąży.</p>",
     "pic": "pregnant-woman.jpg"
   }
 ]

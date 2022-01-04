@@ -1,13 +1,13 @@
-import React from "react";
-import SwiperCore, { Pagination, Autoplay } from "swiper";
-import { Swiper, SwiperSlide } from "swiper/react";
+import React from 'react';
+import SwiperCore, { Pagination, Autoplay } from 'swiper';
+import { Swiper, SwiperSlide } from 'swiper/react';
 
-import { StyledCarousel } from "./carousel.styles";
+import { StyledCarousel } from './carousel.styles';
 
 // import Pagination from "./components/pagination";
 
-import "swiper/css";
-import "swiper/css/pagination";
+import 'swiper/css';
+import 'swiper/css/pagination';
 
 const Carousel = ({ slides, slidesPerView }) => {
   const slidesMaped = slides.map((slide, i) => (

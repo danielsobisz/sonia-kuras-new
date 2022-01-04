@@ -5,6 +5,7 @@ export const theme = {
   black: '#282727',
   green: '#87A083',
   orange: '#c2633e',
+  blue: '#384294',
 
   headerHeight: '15rem',
   headerHeightScroll: '8rem',

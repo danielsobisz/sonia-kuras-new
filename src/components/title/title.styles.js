@@ -14,7 +14,8 @@ export const StyledTitle = styled.h2`
 
   color: ${(props) => (props.isWhite ? props.theme.white : props.theme.black)};
 
-  text-align: ${(props) => (props.asMain ? 'center' : 'left')};
+  text-align: ${(props) =>
+    props.asMain || props.isCentered ? 'center' : 'left'};
 
   @media ${breakpoint.device.s} {
     margin-bottom: ${(props) => (props.asMain ? '2.5rem' : 'auto')};

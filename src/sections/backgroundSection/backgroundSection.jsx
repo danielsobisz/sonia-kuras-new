@@ -67,6 +67,7 @@ const BackgroundSection = ({ id, title, text, img, onClick, color }) => {
                   slides={slideFactory}
                   data-sal="slide-up"
                   data-sal-duration="500"
+                  hasPagination
                 />
               ) : (
                 <StyledText>
