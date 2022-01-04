@@ -11,15 +11,16 @@ export const StyledWrapper = styled.div`
 
   @media ${breakpoint.device.m} {
     flex-direction: column;
+    gap: 0;
   }
 `;
 
 export const StyledImg = styled.div`
-  flex-basis: 35%;
+  flex-basis: 25%;
 `;
 
 export const StyledContent = styled.div`
-  flex-basis: 60%;
+  flex-basis: 75%;
 `;
 
 export const StyledButton = styled(Button)`

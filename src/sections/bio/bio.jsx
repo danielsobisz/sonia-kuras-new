@@ -44,12 +44,19 @@ const Bio = () => {
                 ))}
               </StyledContent>
             </StyledWrapper>
-            <StyledContent>
-              {aboutData.second.map((item) => (
-                <TextBlock content={item.content} title={item.title} />
-              ))}
-            </StyledContent>
-            <StyledButton onClick={() => navigate(-1)}>Wróć</StyledButton>
+            <StyledWrapper>
+              <div>
+                {aboutData.second.map((item) => (
+                  <TextBlock content={item.content} title={item.title} />
+                ))}
+              </div>
+              <div>
+                {aboutData.third.map((item) => (
+                  <TextBlock content={item.content} title={item.title} />
+                ))}
+                <StyledButton onClick={() => navigate(-1)}>Wróć</StyledButton>
+              </div>
+            </StyledWrapper>
           </SectionWrapper>
         );
       }}
