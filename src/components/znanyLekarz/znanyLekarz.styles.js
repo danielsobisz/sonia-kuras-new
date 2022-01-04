@@ -1,14 +1,14 @@
 import styled from 'styled-components';
-import FbImg from 'images/facebook.png';
+import ZLImg from 'images/znanylekarz.png';
 
-export const FaceSlider = styled.div`
+export const ZLSlider = styled.div`
   position: fixed;
 
-  right: -30.3rem;
-  top: 19rem;
+  right: -30.4rem;
+  top: 31rem;
 
   display: flex;
-  z-index: 100;
+  z-index: 101;
 
   transition: 0.5s;
 
@@ -17,21 +17,21 @@ export const FaceSlider = styled.div`
   }
 `;
 
-export const FaceCode = styled.div`
+export const ZLCode = styled.div`
   padding: 0.5rem;
   width: 28.6rem;
   height: 29.6rem;
 
-  border: solid #0170cf 0.3rem;
+  border: solid #20c997 0.3rem;
   background: #fff;
   border-radius: 0 0 0 0.8rem;
 `;
 
-export const FaceTab = styled.div`
+export const ZLTab = styled.div`
   height: 11rem;
-  width: 3.5rem;
+  width: 2.5rem;
 
-  background-image: url(${FbImg});
+  background-image: url(${ZLImg});
   background-repeat: no-repeat;
   background-size: contain;
 
