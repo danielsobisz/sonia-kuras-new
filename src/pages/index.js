@@ -6,6 +6,7 @@ import Header from 'sections/header';
 import Hero from 'sections/hero';
 import About from 'sections/about';
 import BackgroundSection from 'sections/backgroundSection';
+import CarouselSection from 'sections/carouselSection';
 import Pricing from 'sections/pricing';
 import Events from 'sections/events';
 import Contact from 'sections/contact';
@@ -38,11 +39,12 @@ const IndexPage = () => {
         text={carouselData}
       />
 
-      <BackgroundSection
+      {/* <BackgroundSection
         img="offer-bg.jpg"
         title="Oferta"
         onClick={navigateToOffer}
-      />
+      /> */}
+      <CarouselSection />
 
       <Pricing />
 
