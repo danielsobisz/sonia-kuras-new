@@ -7,7 +7,7 @@ import Hero from 'sections/hero';
 import Bio from 'sections/bio';
 
 import ZnanyLekarz from 'components/znanyLekarz';
-import FbWidget from 'components/FbWidget';
+import FbWidget from 'components/fbWidget';
 import Footer from 'components/footer';
 
 import { theme } from 'styles/theme';
