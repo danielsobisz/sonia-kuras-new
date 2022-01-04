@@ -3,7 +3,7 @@ import { ThemeProvider } from 'styled-components';
 import { navigate } from 'gatsby-link';
 
 import ZnanyLekarz from 'components/znanyLekarz';
-import FbWidget from 'components/FbWidget';
+import FbWidget from 'components/fbWidget';
 
 import Header from 'sections/header';
 import Hero from 'sections/hero';
