@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import ZLImg from 'images/znanylekarz.png';
+import ZLImg from 'images/znanyLekarz.png';
 
 export const ZLSlider = styled.div`
   position: fixed;
