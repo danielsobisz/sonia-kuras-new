@@ -6,6 +6,8 @@ import Header from 'sections/header';
 import Hero from 'sections/hero';
 import Bio from 'sections/bio';
 
+import ZnanyLekarz from 'components/znanyLekarz';
+import FbWidget from 'components/FbWidget';
 import Footer from 'components/footer';
 
 import { theme } from 'styles/theme';
@@ -24,6 +26,9 @@ const About = () => {
       <Bio />
 
       <Footer />
+
+      <ZnanyLekarz />
+      <FbWidget />
     </ThemeProvider>
   );
 };

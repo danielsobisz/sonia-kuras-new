@@ -2,6 +2,9 @@ import * as React from 'react';
 import { ThemeProvider } from 'styled-components';
 import { navigate } from 'gatsby-link';
 
+import ZnanyLekarz from 'components/znanyLekarz';
+import FbWidget from 'components/FbWidget';
+
 import Header from 'sections/header';
 import Hero from 'sections/hero';
 import About from 'sections/about';
@@ -51,6 +54,9 @@ const IndexPage = () => {
       <Events />
 
       <Contact />
+
+      <ZnanyLekarz />
+      <FbWidget />
     </ThemeProvider>
   );
 };

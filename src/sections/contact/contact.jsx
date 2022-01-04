@@ -7,7 +7,6 @@ import Social from 'components/social';
 import Title from 'components/title';
 import Address from 'components/address';
 import Map from 'components/map';
-import FbWidget from 'components/FbWidget';
 
 import socialData from 'data/socialData.json';
 
@@ -49,7 +48,6 @@ const Contact = () => {
           <Map />
         </StyledMapContainer>
       </StyledWrapper>
-      <FbWidget />
     </StyledContact>
   );
 };
