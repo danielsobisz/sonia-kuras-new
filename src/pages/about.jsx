@@ -11,6 +11,7 @@ import FbWidget from 'components/fbWidget';
 import Footer from 'components/footer';
 
 import { theme } from 'styles/theme';
+import { IsAboveTablet } from 'styles/matchMedia';
 
 import GlobalStyle from '../styles/index.styles';
 
@@ -27,8 +28,10 @@ const About = () => {
 
       <Footer />
 
-      <ZnanyLekarz />
-      <FbWidget />
+      <IsAboveTablet>
+        <ZnanyLekarz />
+        <FbWidget />
+      </IsAboveTablet>
     </ThemeProvider>
   );
 };
