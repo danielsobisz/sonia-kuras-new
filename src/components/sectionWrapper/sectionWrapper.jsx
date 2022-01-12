@@ -1,6 +1,6 @@
-import React from "react";
+import React from 'react';
 
-import { StyledSection, StyledInner } from "./sectionWrapper.styles";
+import { StyledSection, StyledInner } from './sectionWrapper.styles';
 
 const SectionWrapper = ({ children, isWhite }) => {
   return (

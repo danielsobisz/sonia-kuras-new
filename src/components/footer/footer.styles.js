@@ -2,8 +2,7 @@ import styled from 'styled-components';
 import breakpoint from 'styles/breakpoints';
 
 export const StyledFooter = styled.footer`
-  background-color: ${(props) =>
-    props.hasDiffBg ? props.theme.white : 'transparent'};
+  background-color: ${(props) => (props.hasDiffBg ? props.theme.white : 'transparent')};
 `;
 
 export const StyledWrapper = styled.div`

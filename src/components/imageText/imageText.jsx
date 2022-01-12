@@ -1,18 +1,13 @@
-import React from "react";
-import { StaticQuery, graphql } from "gatsby";
-import Img from "gatsby-image";
+import React from 'react';
+import { StaticQuery, graphql } from 'gatsby';
+import Img from 'gatsby-image';
 
-import Title from "components/title";
-import Video from "components/video";
+import Title from 'components/title';
+import Video from 'components/video';
 
-import {
-  StyledContainer,
-  StyledWrapper,
-  StyledText,
-  StyledImg,
-} from "./imageText.styles";
+import { StyledContainer, StyledWrapper, StyledText, StyledImg } from './imageText.styles';
 
-const ImageText = (props) => {
+const ImageText = ({ pic, title, desc, video }) => {
   return (
     <StaticQuery
       query={graphql`
@@ -30,24 +25,22 @@ const ImageText = (props) => {
         }
       `}
       render={(data) => {
-        const image = data.allImageSharp.edges.filter(
-          (image) => image.node.fluid.originalName === props.pic
-        );
+        const image = data.allImageSharp.edges.filter((img) => img.node.fluid.originalName === pic);
 
         return (
           <StyledContainer data-sal="slide-up" data-sal-duration="500">
-            <Title title={props.title} asMain />
+            <Title title={title} asMain />
 
             <StyledWrapper>
               <StyledText>
-                {props.desc?.map((item) => (
+                {desc?.map((item) => (
                   <p>{item.text}</p>
                 ))}
               </StyledText>
 
               <StyledImg>
-                {props.video ? (
-                  <Video videoTitle={props.title} videoSrcURL={props.video} />
+                {video ? (
+                  <Video videoTitle={title} videoSrcURL={video} />
                 ) : (
                   <Img fluid={image[0].node.fluid} />
                 )}

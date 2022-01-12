@@ -36,7 +36,7 @@ export const StyledPrice = styled.div`
     font-size: 1.8rem;
   }
 
-  @media ${breakpoint.device.s} {
+  @media ${breakpoint.device.m} {
     flex-direction: column;
     justify-content: center;
     align-items: center;

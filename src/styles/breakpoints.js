@@ -1,8 +1,8 @@
 const size = {
-  s: "670px",
-  m: "978px",
-  lg: "1200px",
-  xl: "1440px",
+  s: '670px',
+  m: '978px',
+  lg: '1200px',
+  xl: '1440px',
 };
 
 const device = {

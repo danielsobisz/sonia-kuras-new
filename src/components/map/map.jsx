@@ -1,12 +1,7 @@
-import React from "react";
-import {
-  withScriptjs,
-  withGoogleMap,
-  GoogleMap,
-  Marker,
-} from "react-google-maps/api";
+import React from 'react';
+import { withScriptjs, withGoogleMap, GoogleMap, Marker } from 'react-google-maps/api';
 
-import { StyledMap } from "./map.styles";
+import { StyledMap } from './map.styles';
 
 const GoogleMap = () => {
   return (

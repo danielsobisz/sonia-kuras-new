@@ -1,14 +1,13 @@
-import React from "react";
+import React from 'react';
 
-import { StyledQuote } from "./quoteSection.styles";
+import { StyledQuote } from './quoteSection.styles';
 
 const QuoteSection = () => {
   return (
     <StyledQuote id="quote">
       <blockquote>
         <p className="quote">
-          "Im lepiej rozumiesz siebie i swoje emocje, tym bardziej zaczynasz
-          kochać to, co jest."
+          "Im lepiej rozumiesz siebie i swoje emocje, tym bardziej zaczynasz kochać to, co jest."
         </p>
         <p className="author">Baruch De Spinoza</p>
       </blockquote>

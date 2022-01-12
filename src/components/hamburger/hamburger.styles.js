@@ -25,8 +25,7 @@ export const StyledBar = styled.div.attrs({ activeClassName })`
   height: 0.1rem;
   width: 100%;
 
-  background: ${(props) =>
-    props.isActive ? props.theme.black : props.theme.white};
+  background: ${(props) => (props.isActive ? props.theme.black : props.theme.white)};
   border-radius: 9px;
 
   transform: rotate(0deg);

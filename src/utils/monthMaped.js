@@ -3,43 +3,43 @@ const mapMonth = (month) => {
 
   switch (month) {
     case 0:
-      monthName = "sty";
+      monthName = 'sty';
       break;
     case 1:
-      monthName = "lut";
+      monthName = 'lut';
       break;
     case 2:
-      monthName = "mar";
+      monthName = 'mar';
       break;
     case 3:
-      monthName = "kwi";
+      monthName = 'kwi';
       break;
     case 4:
-      monthName = "maj";
+      monthName = 'maj';
       break;
     case 5:
-      monthName = "cze";
+      monthName = 'cze';
       break;
     case 6:
-      monthName = "lip";
+      monthName = 'lip';
       break;
     case 7:
-      monthName = "sie";
+      monthName = 'sie';
       break;
     case 8:
-      monthName = "wrz";
+      monthName = 'wrz';
       break;
     case 9:
-      monthName = "paź";
+      monthName = 'paź';
       break;
     case 10:
-      monthName = "lis";
+      monthName = 'lis';
       break;
     case 11:
-      monthName = "gru";
+      monthName = 'gru';
       break;
     default:
-      monthName = "";
+      monthName = '';
   }
   return monthName;
 };

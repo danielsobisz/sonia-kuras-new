@@ -1,10 +1,6 @@
-import React from "react";
+import React from 'react';
 
-import {
-  StyledTextBlock,
-  StyledTitle,
-  StyledContent,
-} from "./textBlock.styles";
+import { StyledTextBlock, StyledTitle, StyledContent } from './textBlock.styles';
 
 const TextBlock = ({ title, content }) => {
   return (
@@ -12,7 +8,7 @@ const TextBlock = ({ title, content }) => {
       <StyledTitle>{title}</StyledTitle>
       <StyledContent>
         {content.map((item) => (
-          <div dangerouslySetInnerHTML={{ __html: item.text }} />
+          <div dangerouslySetInnerHTML={{ __html: item.text }} /> // eslint-disable-line
         ))}
       </StyledContent>
     </StyledTextBlock>

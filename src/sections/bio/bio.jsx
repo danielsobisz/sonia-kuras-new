@@ -4,18 +4,12 @@ import Img from 'gatsby-image';
 import { navigate } from 'gatsby-link';
 
 import SectionWrapper from 'components/sectionWrapper';
-import Title from 'components/title';
-
-import TextBlock from './components/textBlock/textBlock';
 
 import aboutData from 'data/aboutData.json';
 
-import {
-  StyledWrapper,
-  StyledImg,
-  StyledContent,
-  StyledButton,
-} from './bio.styles';
+import TextBlock from './components/textBlock/textBlock';
+
+import { StyledWrapper, StyledImg, StyledContent, StyledButton } from './bio.styles';
 
 const Bio = () => {
   return (

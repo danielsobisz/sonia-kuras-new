@@ -1,12 +1,11 @@
-import React from "react";
-import { StaticQuery, graphql } from "gatsby";
-import Img from "gatsby-image";
+import React from 'react';
+import { StaticQuery, graphql } from 'gatsby';
+import Img from 'gatsby-image';
 
-import Carousel from "components/carousel";
-import Title from "components/title";
-import CarouselButton from "components/carouselButton";
+import Carousel from 'components/carousel';
+import Title from 'components/title';
 
-import offerData from "data/offerData";
+import offerData from 'data/offerData';
 
 import {
   StyledSection,
@@ -17,7 +16,7 @@ import {
   StyledTextContent,
   StyledText,
   StyledTitle,
-} from "./carouselSection.styles";
+} from './carouselSection.styles';
 
 const CarouselSection = () => {
   return (
@@ -39,17 +38,16 @@ const CarouselSection = () => {
       render={(data) => {
         const slideFactory = offerData.map((item) => {
           const image = data.allImageSharp.edges.filter(
-            (image) => image.node.fluid.originalName === item.pic
+            (img) => img.node.fluid.originalName === item.pic
           );
-          console.log(image);
 
           return (
             <StyledSlide>
               <StyledImg>
                 <Img
                   imgStyle={{
-                    objectFit: "cover",
-                    objectPosition: "50% 50%",
+                    objectFit: 'cover',
+                    objectPosition: '50% 50%',
                   }}
                   fluid={image[0].node.fluid}
                 />
@@ -69,14 +67,7 @@ const CarouselSection = () => {
 
             <StyledContainer>
               <StyledCarouselWrapper>
-                <Carousel
-                  slides={slideFactory}
-                  data-sal="slide-up"
-                  hasNavigation
-                  loop
-                />
-                {/* <CarouselButton direction="left" />
-                <CarouselButton direction="right" /> */}
+                <Carousel slides={slideFactory} data-sal="slide-up" hasNavigation loop />
               </StyledCarouselWrapper>
             </StyledContainer>
           </StyledSection>

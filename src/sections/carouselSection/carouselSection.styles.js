@@ -1,5 +1,5 @@
-import styled from "styled-components";
-import breakpoint from "styles/breakpoints";
+import styled from 'styled-components';
+import breakpoint from 'styles/breakpoints';
 
 export const StyledSection = styled.section`
   padding: 8rem 0;
@@ -39,8 +39,6 @@ export const StyledSlide = styled.div`
     grid-template-columns: 1fr;
     grid-auto-rows: auto;
     gap: 0;
-
-    height: auto;
   }
 
   p {
@@ -90,7 +88,6 @@ export const StyledText = styled.div`
   margin-top: 2.4rem;
   font-size: 1.6rem;
   line-height: 2.3rem;
-  /* color: black !important; */
 
   @media ${breakpoint.device.lg} {
     font-size: 1.4rem;
@@ -107,7 +104,7 @@ export const StyledText = styled.div`
 `;
 
 export const StyledTitle = styled.h3`
-  font-family: "Raleway", sans-serif;
+  font-family: 'Raleway', sans-serif;
   font-size: 2.6rem;
 
   @media ${breakpoint.device.m} {

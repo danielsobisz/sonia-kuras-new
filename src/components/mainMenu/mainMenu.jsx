@@ -1,20 +1,16 @@
-import React from "react";
-import { Link } from "gatsby";
-import { AnchorLink } from "gatsby-plugin-anchor-links";
+import React from 'react';
+import { Link } from 'gatsby';
+import { AnchorLink } from 'gatsby-plugin-anchor-links';
 
-import { StyledNav, StyledLi } from "./mainMenu.styles";
+import navItems from 'data/navItemsData';
 
-import navItems from "data/navItemsData.js";
+import { StyledNav, StyledLi } from './mainMenu.styles';
 
 const MainMenu = ({ isActive, isVert, onClick }) => {
   const navItemsMapped = navItems?.map((item) => (
-    <StyledLi
-      className={isVert ? "is-vert" : null}
-      isActive={isActive}
-      key={item.name}
-    >
+    <StyledLi className={isVert ? 'is-vert' : null} isActive={isActive} key={item.name}>
       {item.asScrollTo ? (
-        <button onClick={onClick}>
+        <button type="button" onClick={onClick}>
           <AnchorLink to={`/${item.href}`} title={item.name} />
         </button>
       ) : (
@@ -23,11 +19,7 @@ const MainMenu = ({ isActive, isVert, onClick }) => {
     </StyledLi>
   ));
 
-  return (
-    <StyledNav className={isVert ? "is-vert" : null}>
-      {navItemsMapped}
-    </StyledNav>
-  );
+  return <StyledNav className={isVert ? 'is-vert' : null}>{navItemsMapped}</StyledNav>;
 };
 
 export default MainMenu;

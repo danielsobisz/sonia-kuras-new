@@ -1,13 +1,13 @@
-import React from "react";
-import { StaticQuery, graphql } from "gatsby";
-import Img from "gatsby-image";
+import React from 'react';
+import { StaticQuery, graphql } from 'gatsby';
+import Img from 'gatsby-image';
 
-import Title from "components/title";
-import ImageText from "components/imageText";
+import Title from 'components/title';
+import ImageText from 'components/imageText';
 
-import offerData from "data/offerData.json";
+import offerData from 'data/offerData.json';
 
-import { StyledBar, StyledOffer, StyledContainer } from "./offer.styles";
+import { StyledBar, StyledOffer, StyledContainer } from './offer.styles';
 
 const Offer = () => {
   return (

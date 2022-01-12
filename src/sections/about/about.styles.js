@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { StyledButton } from 'components/button/button.styles.js';
+import { StyledButton } from 'components/button/button.styles';
 import breakpoint from 'styles/breakpoints';
 
 export const StyledAbout = styled.div`
