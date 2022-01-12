@@ -1,33 +1,62 @@
-import React from 'react';
-import SwiperCore, { Pagination, Autoplay } from 'swiper';
-import { Swiper, SwiperSlide } from 'swiper/react';
+import React from "react";
+import SwiperCore, { Pagination, Autoplay, Navigation } from "swiper";
+import { Swiper, SwiperSlide } from "swiper/react";
 
-import { StyledCarousel } from './carousel.styles';
+import CarouselButton from "components/carouselButton";
+
+import { StyledCarousel } from "./carousel.styles";
 
 // import Pagination from "./components/pagination";
 
-import 'swiper/css';
-import 'swiper/css/pagination';
+import "swiper/css";
+import "swiper/css/pagination";
 
-const Carousel = ({ slides, slidesPerView }) => {
+const Carousel = ({
+  slides,
+  slidesPerView,
+  hasPagination,
+  hasNavigation,
+  hasAutoplay,
+  loop,
+}) => {
   const slidesMaped = slides.map((slide, i) => (
     <SwiperSlide key={i}>{slide}</SwiperSlide>
   ));
-  SwiperCore.use([Pagination, Autoplay]);
+  SwiperCore.use([Pagination, Autoplay, Navigation]);
 
   return (
-    <StyledCarousel>
-      <Swiper
-        loop
-        autoplay={{
-          delay: 5000,
-        }}
-        pagination={{ clickable: true }}
-        slidesPerView={slidesPerView ? slidesPerView : 1}
-      >
-        {slidesMaped}
-      </Swiper>
-    </StyledCarousel>
+    <>
+      <StyledCarousel>
+        <Swiper
+          loop={loop}
+          autoplay={
+            hasAutoplay
+              ? {
+                  delay: 5000,
+                }
+              : ""
+          }
+          pagination={hasPagination ? { clickable: true } : ""}
+          slidesPerView={slidesPerView ? slidesPerView : 1}
+          navigation={
+            hasNavigation
+              ? {
+                  nextEl: ".right",
+                  prevEl: ".left",
+                }
+              : ""
+          }
+        >
+          {slidesMaped}
+        </Swiper>
+        {hasNavigation && (
+          <>
+            <CarouselButton className="left" direction="left" />
+            <CarouselButton className="right" />
+          </>
+        )}
+      </StyledCarousel>
+    </>
   );
 };
 

@@ -1,4 +1,5 @@
-import styled from 'styled-components';
+import styled from "styled-components";
+import breakpoint from "styles/breakpoints";
 
 export const StyledCarousel = styled.div`
   width: 100%;
@@ -15,5 +16,9 @@ export const StyledCarousel = styled.div`
 
   .swiper-slide {
     height: auto;
+
+    @media ${breakpoint.device.m} {
+      height: 100%;
+    }
   }
 `;

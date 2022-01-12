@@ -1,13 +1,13 @@
-import React, { useState, useEffect } from 'react';
-import { StaticQuery, graphql } from 'gatsby';
+import React, { useState, useEffect } from "react";
+import { StaticQuery, graphql } from "gatsby";
 
-import SectionWrapper from 'components/sectionWrapper';
-import Title from 'components/title';
-import Button from 'components/button';
+import SectionWrapper from "components/sectionWrapper";
+import Title from "components/title";
+import Button from "components/button";
 
-import Event from './components/event';
+import Event from "./components/event";
 
-import { StyledEvents, StyledInfo } from './events.styles';
+import { StyledEvents, StyledInfo } from "./events.styles";
 
 const Events = () => {
   const [data, setData] = useState([]);
@@ -37,10 +37,10 @@ const Events = () => {
   }, []);
   const dataa = {
     id: 1,
-    name: 'event',
-    city: 'Wroclaw',
-    place: 'Sepolno',
-    time: '12',
+    name: "event",
+    city: "Wroclaw",
+    place: "Sepolno",
+    time: "12",
   };
 
   return (
@@ -50,7 +50,6 @@ const Events = () => {
         <StyledEvents>{facebookDataMaped}</StyledEvents>
       ) : (
         <StyledEvents>
-          {' '}
           <Event {...dataa} /> <Event {...dataa} />
         </StyledEvents>
 

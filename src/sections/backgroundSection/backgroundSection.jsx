@@ -1,9 +1,9 @@
-import React from 'react';
-import { StaticQuery, graphql } from 'gatsby';
+import React from "react";
+import { StaticQuery, graphql } from "gatsby";
 
-import Title from 'components/title';
-import Carousel from 'components/carousel';
-import Button from 'components/button';
+import Title from "components/title";
+import Carousel from "components/carousel";
+import Button from "components/button";
 
 import {
   StyledBackgroundSection,
@@ -13,10 +13,9 @@ import {
   StyledSlide,
   StyledText,
   StyledBackgroundBlur,
-} from './backgroundSection.styles';
+} from "./backgroundSection.styles";
 
 const BackgroundSection = ({ id, title, text, img, onClick, color }) => {
-  // const slideFactory =
   return (
     <StaticQuery
       query={graphql`
@@ -68,6 +67,8 @@ const BackgroundSection = ({ id, title, text, img, onClick, color }) => {
                   data-sal="slide-up"
                   data-sal-duration="500"
                   hasPagination
+                  hasAutoplay
+                  loop
                 />
               ) : (
                 <StyledText>
