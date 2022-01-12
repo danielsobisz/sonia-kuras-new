@@ -16,7 +16,6 @@ const Carousel = ({ slides, slidesPerView, hasPagination, hasNavigation, hasAuto
   return (
     <StyledCarousel>
       <Swiper
-        calculateHeight
         loop={loop}
         autoplay={
           hasAutoplay
