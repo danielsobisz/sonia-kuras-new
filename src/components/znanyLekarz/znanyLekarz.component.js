@@ -12,7 +12,7 @@ const ZLWidget = () => {
         <ZLCode>
           <a
             id="zl-url"
-            class="zl-url"
+            className="zl-url"
             href="https://www.znanylekarz.pl/sonia-kuras/psycholog-psychoterapeuta/gdansk"
             rel="nofollow"
             data-zlw-doctor="sonia-kuras"
@@ -31,7 +31,7 @@ const ZLWidget = () => {
           <ZLCode>
             <a
               id="zl-url"
-              class="zl-url"
+              className="zl-url"
               href="https://www.znanylekarz.pl/sonia-kuras/psycholog-psychoterapeuta/gdansk"
               rel="nofollow"
               data-zlw-doctor="sonia-kuras"

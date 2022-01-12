@@ -8,7 +8,7 @@ export const StyledButton = styled.button`
 
   letter-spacing: 0.2rem;
 
-  height: 4rem;
+  height: auto;
 
   text-transform: uppercase;
 
