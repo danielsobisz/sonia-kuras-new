@@ -72,3 +72,17 @@ export const StyledContainer = styled.div`
   align-items: center;
   gap: 1.2rem;
 `;
+
+export const StyledSocialWrapper = styled.div`
+  display: flex;
+  justify-content: center;
+
+  gap: 3rem;
+
+  @media ${breakpoint.device.s} {
+    align-items: center;
+    flex-direction: column;
+
+    margin-bottom: 3rem;
+  }
+`;

@@ -5,13 +5,7 @@ import Button from 'components/button';
 
 import mapMonth from 'utils/monthMaped';
 
-import {
-  StyledEvent,
-  StyledDate,
-  StyledInfo,
-  StyledGeneral,
-  StyledTitle,
-} from './event.styles';
+import { StyledEvent, StyledDate, StyledInfo, StyledGeneral, StyledTitle } from './event.styles';
 
 const Event = ({ name, id, city, place, time }) => {
   const eventDate = dayjs(time);

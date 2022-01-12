@@ -1,1 +1,1 @@
-export { default } from "./quoteSection";
+export { default } from './quoteSection';

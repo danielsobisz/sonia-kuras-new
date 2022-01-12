@@ -1,5 +1,5 @@
-import styled from "styled-components";
-import breakpoint from "styles/breakpoints";
+import styled from 'styled-components';
+import breakpoint from 'styles/breakpoints';
 
 export const StyledOffer = styled.section`
   /* margin-top: 8rem; */

@@ -1,34 +1,30 @@
-import React, { useState, useRef, useEffect } from 'react';
+import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faMapMarkerAlt } from '@fortawesome/free-solid-svg-icons';
 
-import SectionWrapper from 'components/sectionWrapper';
-import Social from 'components/social';
+import { IsBellowTablet } from 'styles/matchMedia';
+
 import Title from 'components/title';
 import Address from 'components/address';
 import Map from 'components/map';
-
-import socialData from 'data/socialData.json';
+import ZnanyLekarz from 'components/znanyLekarz';
+import FbWidget from 'components/fbWidget';
 
 import {
   StyledContactInfo,
-  StyledSocials,
   StyledContact,
   StyledAddress,
   StyledWrapper,
   StyledMapContainer,
+  StyledSocialWrapper,
 } from './contact.styles';
 
 const Contact = () => {
-  // const socialDataMaped = socialData?.map((item) => <Social {...item} />);
-
   return (
     <StyledContact>
       <StyledWrapper id="contact">
         <StyledContactInfo>
           <Title title="Kontakt" asContact asMain />
-
-          {/* <StyledSocials>{socialDataMaped}</StyledSocials> */}
 
           <StyledAddress>
             <p>Sonia Kuraś</p>
@@ -38,8 +34,7 @@ const Contact = () => {
             <p>Gdańsk-Wrzeszcz (przy dworcu PKP i SKM),</p>
             <p>II piętro</p>
             <p>
-              wejście do klatki schodowej od szczytu budynku, <br /> po stronie
-              al. Grunwaldzkiej
+              wejście do klatki schodowej od szczytu budynku, <br /> po stronie al. Grunwaldzkiej
             </p>
           </StyledAddress>
         </StyledContactInfo>
@@ -47,6 +42,13 @@ const Contact = () => {
         <StyledMapContainer>
           <Map />
         </StyledMapContainer>
+
+        <IsBellowTablet>
+          <StyledSocialWrapper>
+            <ZnanyLekarz />
+            <FbWidget />
+          </StyledSocialWrapper>
+        </IsBellowTablet>
       </StyledWrapper>
     </StyledContact>
   );

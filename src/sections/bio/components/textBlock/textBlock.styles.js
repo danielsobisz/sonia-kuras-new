@@ -1,5 +1,5 @@
-import styled from "styled-components";
-import breakpoint from "styles/breakpoints";
+import styled from 'styled-components';
+import breakpoint from 'styles/breakpoints';
 
 export const StyledTextBlock = styled.div`
   margin: 2rem 0;

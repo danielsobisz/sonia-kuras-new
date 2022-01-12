@@ -1,8 +1,8 @@
-import styled, { css } from "styled-components";
-import breakpoint from "styles/breakpoints";
+import styled, { css } from 'styled-components';
+import breakpoint from 'styles/breakpoints';
 
 const setDirection = (direction) => {
-  if (direction === "left") {
+  if (direction === 'left') {
     return css`
       left: -3rem;
       @media ${breakpoint.device.m} {

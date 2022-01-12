@@ -1,8 +1,8 @@
-import React from "react";
+import React from 'react';
 
-import { StyledIframe, StyledVideo } from "./video.styles";
+import { StyledIframe, StyledVideo } from './video.styles';
 
-const Video = ({ videoSrcURL, videoTitle, ...props }) => (
+const Video = ({ videoSrcURL, videoTitle }) => (
   <StyledVideo>
     <StyledIframe
       src={videoSrcURL}

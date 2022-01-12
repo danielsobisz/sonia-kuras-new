@@ -1,6 +1,6 @@
-import React from "react";
+import React from 'react';
 
-import { StyledMap } from "./map.styles";
+import { StyledMap } from './map.styles';
 
 const GoogleMap = () => {
   return (

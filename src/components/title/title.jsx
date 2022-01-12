@@ -2,15 +2,7 @@ import React from 'react';
 
 import { StyledTitle } from './title.styles';
 
-const Title = ({
-  isCentered,
-  isWhite,
-  title,
-  asMain,
-  asContact,
-  isSmaller,
-  className,
-}) => {
+const Title = ({ isCentered, isWhite, title, asMain, asContact, isSmaller, className }) => {
   return (
     <StyledTitle
       className={className}

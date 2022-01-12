@@ -6,12 +6,7 @@ import { navigate } from 'gatsby-link';
 import SectionWrapper from 'components/sectionWrapper/sectionWrapper';
 import Title from 'components/title';
 
-import {
-  StyledAbout,
-  StyledTextBox,
-  StyledFlexItem,
-  StyledButtonAbout,
-} from './about.styles';
+import { StyledAbout, StyledTextBox, StyledFlexItem, StyledButtonAbout } from './about.styles';
 
 const About = () => {
   return (
@@ -39,16 +34,14 @@ const About = () => {
 
               <StyledTextBox>
                 <p>
-                  Wierzę, że proces terapeutyczny to najlepsza forma poznania
-                  siebie i bezpiecznej pracy nad zrozumieniem relacji, które
-                  budujemy z innymi ludźmi. Jako psycholożka i psychoterapeutka
-                  w zgłębianiu rozumienia psychiki ludzkiej kładę szczególną
-                  uwagę na rolę ciała i ruchu. Zarówno w kontakcie
-                  indywidualnym, jak i grupowym korzystam z poznanych technik
-                  pracy terapeutycznej i rosnącego doświadczenia. Z ogromną
-                  pasją odnoszę się do swojego zawodu. Swoich pacjentów zawsze
-                  staram się obdarzać pełnym szacunkiem oraz empatią,
-                  zapewniając im maksymalne wsparcie i pełną dyskrecję.
+                  Wierzę, że proces terapeutyczny to najlepsza forma poznania siebie i bezpiecznej
+                  pracy nad zrozumieniem relacji, które budujemy z innymi ludźmi. Jako psycholożka i
+                  psychoterapeutka w zgłębianiu rozumienia psychiki ludzkiej kładę szczególną uwagę
+                  na rolę ciała i ruchu. Zarówno w kontakcie indywidualnym, jak i grupowym korzystam
+                  z poznanych technik pracy terapeutycznej i rosnącego doświadczenia. Z ogromną
+                  pasją odnoszę się do swojego zawodu. Swoich pacjentów zawsze staram się obdarzać
+                  pełnym szacunkiem oraz empatią, zapewniając im maksymalne wsparcie i pełną
+                  dyskrecję.
                 </p>
               </StyledTextBox>
 

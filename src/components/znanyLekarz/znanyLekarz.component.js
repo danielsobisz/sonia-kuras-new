@@ -1,15 +1,14 @@
 /* eslint-disable */
 import React from 'react';
-import { Helmet } from 'react-helmet';
+
+import { IsBellowTablet, IsAboveTablet } from 'styles/matchMedia';
 
 import { ZLCode, ZLSlider, ZLTab } from './znanyLekarz.styles';
 
 const ZLWidget = () => {
   return (
     <>
-      <ZLSlider>
-        <ZLTab />
-
+      <IsBellowTablet>
         <ZLCode>
           <a
             id="zl-url"
@@ -24,7 +23,27 @@ const ZLWidget = () => {
             Sonia Kuraś - ZnanyLekarz.pl
           </a>
         </ZLCode>
-      </ZLSlider>
+      </IsBellowTablet>
+      <IsAboveTablet>
+        <ZLSlider>
+          <ZLTab />
+
+          <ZLCode>
+            <a
+              id="zl-url"
+              class="zl-url"
+              href="https://www.znanylekarz.pl/sonia-kuras/psycholog-psychoterapeuta/gdansk"
+              rel="nofollow"
+              data-zlw-doctor="sonia-kuras"
+              data-zlw-type="big"
+              data-zlw-opinion="false"
+              data-zlw-hide-branding="true"
+            >
+              Sonia Kuraś - ZnanyLekarz.pl
+            </a>
+          </ZLCode>
+        </ZLSlider>
+      </IsAboveTablet>
     </>
   );
 };

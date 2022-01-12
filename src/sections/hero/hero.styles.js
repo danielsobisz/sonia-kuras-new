@@ -8,8 +8,7 @@ export const StyledHero = styled.div`
   height: calc(95vh - ${(props) => props.theme.headerHeight});
   padding-top: ${(props) => props.theme.headerHeight};
 
-  background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)),
-    url(${bgImg});
+  background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url(${bgImg});
   background-repeat: no-repeat;
   background-size: cover;
 

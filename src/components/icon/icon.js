@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useEffect, useState } from 'react';
 
 export default function Svg({ path }) {
   const [svg, setSvg] = useState([]);

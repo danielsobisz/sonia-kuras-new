@@ -2,7 +2,7 @@ import React from 'react';
 
 import Address from 'components/address';
 
-import { StyledFooter, StyledButton, StyledWrapper } from './footer.styles';
+import { StyledFooter, StyledWrapper } from './footer.styles';
 
 const Footer = () => {
   return (

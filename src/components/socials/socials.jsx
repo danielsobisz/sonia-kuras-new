@@ -1,8 +1,8 @@
-import React from "react";
+import React from 'react';
 
-import Social from "./components/social";
+import Social from './components/social';
 
-import { SocialsWrapper } from "./socials.styles";
+import { SocialsWrapper } from './socials.styles';
 
 const Socials = ({ isActive }) => {
   return (

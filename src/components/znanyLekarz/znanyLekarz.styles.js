@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import breakpoint from 'styles/breakpoints';
 import ZLImg from 'images/znanyLekarz.png';
 
 export const ZLSlider = styled.div`
@@ -25,6 +26,10 @@ export const ZLCode = styled.div`
   border: solid #20c997 0.3rem;
   background: #fff;
   border-radius: 0 0 0 0.8rem;
+
+  @media ${breakpoint.device.m} {
+    height: auto;
+  }
 `;
 
 export const ZLTab = styled.div`

@@ -3,10 +3,6 @@ import React, { useState, useEffect } from 'react';
 import Logo from 'components/logo';
 import Hamburger from 'components/hamburger';
 import Sidebar from 'components/sidebar';
-import MainMenu from 'components/mainMenu';
-import Socials from 'components/socials';
-
-import { IsBellowLaptop, IsAboveLaptop } from 'styles/matchMedia';
 
 import { StyledHeader } from './header.styles';
 
@@ -17,7 +13,7 @@ const Header = () => {
   const setOnScroll = () => {
     if (window.scrollY > 500) {
       setIsActive(true);
-    } else if (100 > window.scrollY) {
+    } else if (window.scrollY < 100) {
       setIsActive(false);
     }
   };
@@ -39,11 +35,7 @@ const Header = () => {
           <MainMenu isActive={isActive} />
         </IsAboveLaptop> */}
 
-        <Hamburger
-          onClick={setSidebar}
-          isSidebarActive={isSidebarActive}
-          isActive={isActive}
-        />
+        <Hamburger onClick={setSidebar} isSidebarActive={isSidebarActive} isActive={isActive} />
         <Sidebar isActive={isSidebarActive} onClick={setSidebar} />
       </div>
     </StyledHeader>
