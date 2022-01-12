@@ -1,11 +1,12 @@
-import React from 'react';
-import { StaticQuery, graphql } from 'gatsby';
-import Img from 'gatsby-image';
+import React from "react";
+import { StaticQuery, graphql } from "gatsby";
+import Img from "gatsby-image";
 
-import Carousel from 'components/carousel';
-import Title from 'components/title';
+import Carousel from "components/carousel";
+import Title from "components/title";
+import CarouselButton from "components/carouselButton";
 
-import offerData from 'data/offerData';
+import offerData from "data/offerData";
 
 import {
   StyledSection,
@@ -15,7 +16,8 @@ import {
   StyledImg,
   StyledTextContent,
   StyledText,
-} from './carouselSection.styles';
+  StyledTitle,
+} from "./carouselSection.styles";
 
 const CarouselSection = () => {
   return (
@@ -46,14 +48,14 @@ const CarouselSection = () => {
               <StyledImg>
                 <Img
                   imgStyle={{
-                    objectFit: 'cover',
-                    objectPosition: '50% 50%',
+                    objectFit: "cover",
+                    objectPosition: "50% 50%",
                   }}
                   fluid={image[0].node.fluid}
                 />
               </StyledImg>
               <StyledTextContent>
-                <Title title={item.title} isCentered />
+                <StyledTitle>{item.title}</StyledTitle>
 
                 <StyledText dangerouslySetInnerHTML={{ __html: item.text }} />
               </StyledTextContent>
@@ -62,12 +64,19 @@ const CarouselSection = () => {
         });
 
         return (
-          <StyledSection>
-            <Title title="Oferta" asMain isWhite />
+          <StyledSection id="offer">
+            <Title title="Oferta" asMain />
 
             <StyledContainer>
               <StyledCarouselWrapper>
-                <Carousel slides={slideFactory} data-sal="slide-up" />
+                <Carousel
+                  slides={slideFactory}
+                  data-sal="slide-up"
+                  hasNavigation
+                  loop
+                />
+                {/* <CarouselButton direction="left" />
+                <CarouselButton direction="right" /> */}
               </StyledCarouselWrapper>
             </StyledContainer>
           </StyledSection>

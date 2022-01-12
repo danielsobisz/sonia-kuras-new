@@ -11,7 +11,7 @@ const navItems = [
   },
   {
     name: "oferta",
-    href: "offer#quote",
+    href: "#offer",
     asScrollTo: true,
   },
   {

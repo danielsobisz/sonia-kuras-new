@@ -6,7 +6,7 @@ export const StyledQuote = styled.div`
   justify-content: center;
   align-items: center;
 
-  padding: 5rem 0;
+  padding: 8rem 0;
 
   background-color: ${(props) => props.theme.white};
 
