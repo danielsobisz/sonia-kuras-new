@@ -37,7 +37,7 @@ const Events = () => {
     <SectionWrapper isWhite>
       <Title title="Aktualności" asMain />
       {facebookDataMaped && facebookDataMaped.length > 0 ? (
-        <StyledEvents>{facebookDataMaped}</StyledEvents>
+        <StyledEvents>{facebookDataMaped[(0, 2)]}</StyledEvents>
       ) : (
         <StyledInfo>
           <p>Brak dostępnych wydarzeń</p>

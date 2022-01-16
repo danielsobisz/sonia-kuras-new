@@ -7,8 +7,6 @@ export const StyledTitle = styled.h2`
   font-size: ${(props) => (props.isSmaller ? '2.4rem' : '3.2rem')};
   font-family: ${(props) => (props.asContact ? '"Cinzel", sans-serif' : "'Raleway', sans-serif")};
   font-weight: 700;
-  font-style: italic;
-  font-style: ${(props) => (props.asContact ? 'normal' : 'italic')};
   font-weight: 700;
 
   color: ${(props) => (props.isWhite ? props.theme.white : props.theme.black)};
@@ -17,5 +15,6 @@ export const StyledTitle = styled.h2`
 
   @media ${breakpoint.device.s} {
     margin-bottom: ${(props) => (props.asMain ? '2.5rem' : 'auto')};
+    font-size: 2.8rem;
   }
 `;

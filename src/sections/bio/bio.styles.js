@@ -25,14 +25,14 @@ export const StyledContent = styled.div`
 
 export const StyledButton = styled(Button)`
   position: absolute;
-  bottom: 0;
+  bottom: -5rem;
   right: 2rem;
 
   @media (min-width: 1440px) {
     right: 0;
   }
 
-  @media ${breakpoint.device.s} {
-    position: static;
+  @media ${breakpoint.device.m} {
+    bottom: -2rem;
   }
 `;

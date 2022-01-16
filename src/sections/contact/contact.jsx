@@ -17,6 +17,7 @@ import {
   StyledWrapper,
   StyledMapContainer,
   StyledSocialWrapper,
+  StyledName,
 } from './contact.styles';
 
 const Contact = () => {
@@ -27,7 +28,7 @@ const Contact = () => {
           <Title title="Kontakt" asContact asMain />
 
           <StyledAddress>
-            <p>Sonia Kuraś</p>
+            <StyledName>Sonia Kuraś</StyledName>
             <Address />
             <FontAwesomeIcon icon={faMapMarkerAlt} />
             <p>ul. Klonowa 1</p>

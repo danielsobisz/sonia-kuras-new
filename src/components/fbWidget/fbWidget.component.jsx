@@ -13,9 +13,7 @@ const FbWidget = () => {
           <div
             className="fb-page"
             data-href="https://www.facebook.com/Sonia-Kura%C5%9B-psychologia-i-psychoterapia-476345809599003/"
-            data-tabs=""
-            data-width=""
-            data-height=""
+            data-width="285"
             data-small-header="false"
             data-adapt-container-width="true"
             data-hide-cover="false"

@@ -11,7 +11,7 @@ const Header = () => {
   const [isSidebarActive, setIsSidebarActive] = useState();
 
   const setOnScroll = () => {
-    if (window.scrollY > 500) {
+    if (window.scrollY > 300) {
       setIsActive(true);
     } else if (window.scrollY < 100) {
       setIsActive(false);

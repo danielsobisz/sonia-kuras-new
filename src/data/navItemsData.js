@@ -1,36 +1,36 @@
 const navItems = [
   {
-    name: "start",
-    href: "#top",
+    name: 'start',
+    href: '#top',
     asScrollTo: true,
   },
   {
-    name: "kim jestem",
-    href: "#about",
+    name: 'kim jestem',
+    href: '#about',
     asScrollTo: true,
   },
   {
-    name: "oferta",
-    href: "#offer",
+    name: 'metoda',
+    href: '#dmt',
     asScrollTo: true,
   },
   {
-    name: "metoda",
-    href: "#dmt",
+    name: 'oferta',
+    href: '#offer',
     asScrollTo: true,
   },
   {
-    name: "cennik",
-    href: "#pricing",
+    name: 'aktualności',
+    href: '#',
+  },
+  {
+    name: 'cennik',
+    href: '#pricing',
     asScrollTo: true,
   },
   {
-    name: "wydarzenia",
-    href: "#",
-  },
-  {
-    name: "kontakt",
-    href: "#contact",
+    name: 'kontakt',
+    href: '#contact',
     asScrollTo: true,
   },
 ];
