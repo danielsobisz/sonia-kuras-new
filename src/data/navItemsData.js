@@ -21,7 +21,7 @@ const navItems = [
   },
   {
     name: 'aktualności',
-    href: '#',
+    href: '#events',
   },
   {
     name: 'cennik',
