@@ -14,7 +14,7 @@ export const StyledPrice = styled.div`
   display: flex;
   justify-content: space-between;
 
-  font-size: 2.8rem;
+  font-size: 2rem;
   text-align: center;
 
   &:not(:last-child) {

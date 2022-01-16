@@ -17,6 +17,7 @@ export const StyledQuote = styled.div`
   .quote {
     text-align: center;
 
+    font-style: italic;
     font-size: 2.8rem;
 
     @media ${breakpoint.device.lg} {

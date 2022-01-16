@@ -1,6 +1,9 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { StaticQuery, graphql } from 'gatsby';
+import ModalVideo from 'react-modal-video';
 import Img from 'gatsby-image';
+// import Plyr from 'react-plyr';
+import PlaySvg from 'assets/play.svg';
 
 import Carousel from 'components/carousel';
 import Title from 'components/title';
@@ -16,9 +19,12 @@ import {
   StyledTextContent,
   StyledText,
   StyledTitle,
+  StyledVideo,
+  SvgWrapper,
 } from './carouselSection.styles';
 
 const CarouselSection = () => {
+  const [isOpen, setIsOpen] = useState(false);
   return (
     <StaticQuery
       query={graphql`
@@ -51,10 +57,14 @@ const CarouselSection = () => {
                   }}
                   fluid={image[0].node.fluid}
                 />
+                {item.video && (
+                  <SvgWrapper onClick={() => setIsOpen(true)}>
+                    <PlaySvg />
+                  </SvgWrapper>
+                )}
               </StyledImg>
               <StyledTextContent>
                 <StyledTitle>{item.title}</StyledTitle>
-
                 <StyledText dangerouslySetInnerHTML={{ __html: item.text }} />
               </StyledTextContent>
             </StyledSlide>
@@ -70,6 +80,17 @@ const CarouselSection = () => {
                 <Carousel slides={slideFactory} data-sal="slide-up" hasNavigation loop />
               </StyledCarouselWrapper>
             </StyledContainer>
+            {isOpen && typeof window !== 'undefined' && (
+              <StyledVideo>
+                <ModalVideo
+                  channel="youtube"
+                  isOpen={isOpen}
+                  videoId="PvxN-vUFRzM"
+                  onClose={() => setIsOpen(false)}
+                  autoplay
+                />
+              </StyledVideo>
+            )}
           </StyledSection>
         );
       }}

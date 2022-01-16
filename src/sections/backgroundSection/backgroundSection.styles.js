@@ -44,7 +44,7 @@ export const StyledTextContent = styled.div`
     }
 
     @media ${breakpoint.device.s} {
-      text-align: left;
+      /* text-align: left; */
       font-size: 1.4rem;
     }
   }
@@ -80,6 +80,7 @@ export const StyledText = styled.p`
 
   @media ${breakpoint.device.m} {
     margin: 0 2rem;
+    text-align: center;
   }
 `;
 

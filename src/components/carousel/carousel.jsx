@@ -16,6 +16,7 @@ const Carousel = ({ slides, slidesPerView, hasPagination, hasNavigation, hasAuto
   return (
     <StyledCarousel>
       <Swiper
+        allowTouchMove={false}
         loop={loop}
         autoplay={
           hasAutoplay

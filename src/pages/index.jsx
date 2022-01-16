@@ -45,9 +45,9 @@ const IndexPage = () => {
       /> */}
       <CarouselSection />
 
-      <Pricing />
-
       <Events />
+
+      <Pricing />
 
       <Contact />
 

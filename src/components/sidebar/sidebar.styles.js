@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import breakpoint from 'styles/breakpoints';
 
 const activeClass = 'active';
 
@@ -20,6 +21,10 @@ export const StyledSidebar = styled.div.attrs({ activeClass })`
 
   &.${activeClass} {
     transform: translateX(0);
+  }
+
+  @media ${breakpoint.device.s} {
+    background-color: rgba(231, 231, 231, 1);
   }
 `;
 

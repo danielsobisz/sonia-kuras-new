@@ -86,3 +86,7 @@ export const StyledSocialWrapper = styled.div`
     margin-bottom: 3rem;
   }
 `;
+
+export const StyledName = styled.p`
+  font-size: 2.4rem;
+`;
