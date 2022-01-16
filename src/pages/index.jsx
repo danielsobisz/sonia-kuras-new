@@ -1,4 +1,5 @@
 import * as React from 'react';
+import { Helmet } from 'react-helmet';
 import { ThemeProvider } from 'styled-components';
 
 import ZnanyLekarz from 'components/znanyLekarz';
@@ -55,6 +56,15 @@ const IndexPage = () => {
         <ZnanyLekarz />
         <FbWidget />
       </IsAboveTablet>
+
+      <Helmet>
+        <script
+          async
+          defer
+          crossOrigin="anonymous"
+          src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v6.0&appId=2186738638294469&autoLogAppEvents=1"
+        />
+      </Helmet>
     </ThemeProvider>
   );
 };
