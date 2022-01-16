@@ -22,6 +22,7 @@ const navItems = [
   {
     name: 'aktualności',
     href: '#events',
+    asScrollTo: true,
   },
   {
     name: 'cennik',
