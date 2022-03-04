@@ -9,7 +9,7 @@ export const StyledSection = styled.section`
     padding: 4rem 0;
   }
 
-  @media ${breakpoint.device.m} {
+  @media ${breakpoint.device.xl} {
     height: auto;
   }
 
@@ -89,6 +89,7 @@ export const StyledText = styled.div`
   margin-top: 2.4rem;
   font-size: 1.6rem;
   line-height: 2.3rem;
+  text-align: justify;
 
   @media ${breakpoint.device.lg} {
     font-size: 1.4rem;
