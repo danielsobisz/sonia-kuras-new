@@ -33,5 +33,9 @@ export const StyledHero = styled.div`
     @media ${breakpoint.device.lg} {
       font-size: 2.8rem;
     }
+
+    @media ${breakpoint.device.s} {
+      font-size: 2rem;
+    }
   }
 `;

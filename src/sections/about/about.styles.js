@@ -26,6 +26,7 @@ export const StyledTextBox = styled.div`
 
   p {
     line-height: 3rem;
+    text-align: justify;
   }
 `;
 

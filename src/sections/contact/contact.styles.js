@@ -16,6 +16,8 @@ export const StyledAddress = styled.address`
 export const StyledContact = styled.div`
   padding: 8rem 2rem;
 
+  background-color: ${(props) => props.theme.white};
+
   @media ${breakpoint.device.m} {
     padding: 4rem 0 0;
   }
@@ -88,5 +90,7 @@ export const StyledSocialWrapper = styled.div`
 `;
 
 export const StyledName = styled.p`
+  margin-bottom: 3.2rem;
+
   font-size: 2.4rem;
 `;

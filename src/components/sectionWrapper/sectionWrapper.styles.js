@@ -5,7 +5,7 @@ export const StyledSection = styled.section`
   padding-top: 8rem;
   padding-bottom: 8rem;
 
-  padding: 8rem 2rem;
+  padding: 8rem 6rem;
   margin: 0 auto;
 
   background-color: ${(props) => (props.isWhite ? props.theme.white : null)};
