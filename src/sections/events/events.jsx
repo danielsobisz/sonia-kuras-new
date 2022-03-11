@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import dayjs from 'dayjs';
 
 import SectionWrapper from 'components/sectionWrapper';
 import Title from 'components/title';
@@ -11,10 +12,12 @@ import { StyledEvents, StyledInfo } from './events.styles';
 const Events = () => {
   const [data, setData] = useState([]);
 
+  const today = dayjs().valueOf();
+
   const facebookData = data?.map((event) => ({
     id: event.id,
     name: event.name,
-    city: event.place.location.city,
+    city: event.place && event.place.location && event.place.location.city,
     place: event.place.name,
     time: event.start_time,
   }));
@@ -29,7 +32,11 @@ const Events = () => {
     fetch(`https://graph.facebook.com/v12.0/me/events?access_token=${process.env.GATSBY_FB_TOKEN}`)
       .then((response) => response.json())
       .then((resultData) => {
-        setData(resultData.data);
+        const filteredData = resultData.data?.filter(
+          (item) => dayjs(item.start_time).valueOf() > today
+        );
+
+        setData(filteredData);
       });
   }, []);
 
