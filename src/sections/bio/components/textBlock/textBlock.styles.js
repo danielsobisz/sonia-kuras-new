@@ -18,10 +18,12 @@ export const StyledContent = styled.div`
 
   p,
   li {
+    line-height: 3rem;
     margin: 1rem 0;
 
     @media ${breakpoint.device.s} {
       font-size: 1.4rem;
+      line-height: 2rem;
     }
   }
 `;

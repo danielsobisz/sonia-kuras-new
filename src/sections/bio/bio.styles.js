@@ -25,7 +25,7 @@ export const StyledContent = styled.div`
 
 export const StyledButton = styled(Button)`
   position: absolute;
-  bottom: -5rem;
+  bottom: -8rem;
   right: 2rem;
 
   @media (min-width: 1440px) {
