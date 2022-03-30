@@ -37,6 +37,6 @@ export const StyledFlexItem = styled.div`
 export const StyledButtonAbout = styled(StyledButton)`
   display: block;
 
-  margin-top: 3.6rem;
+  margin-top: 6rem;
   margin-left: auto;
 `;

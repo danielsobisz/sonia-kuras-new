@@ -34,7 +34,7 @@ const Bio = () => {
               </StyledImg>
               <StyledContent>
                 {aboutData.first.map((item) => (
-                  <TextBlock content={item.content} title={item.title} />
+                  <TextBlock withNoMargin content={item.content} title={item.title} />
                 ))}
               </StyledContent>
             </StyledWrapper>

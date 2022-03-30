@@ -27,7 +27,7 @@ export const StyledHero = styled.div`
   }
 
   h1 {
-    font-style: italic;
+    /* font-style: italic; */
     color: ${(props) => props.theme.white};
 
     @media ${breakpoint.device.lg} {

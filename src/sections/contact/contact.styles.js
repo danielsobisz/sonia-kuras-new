@@ -92,5 +92,6 @@ export const StyledSocialWrapper = styled.div`
 export const StyledName = styled.p`
   margin-bottom: 3.2rem;
 
-  font-size: 2.4rem;
+  font-size: 2.6rem;
+  font-weight: 800;
 `;
