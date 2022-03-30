@@ -14,10 +14,10 @@ export const StyledWrapper = styled.div`
 
   max-width: 1440px;
   margin: 0 auto;
-  padding: 0 2rem;
+  padding: 6rem 2rem 0 2rem;
 
   @media (min-width: 1440px) {
-    padding: 0;
+    padding: 6rem 0 0 0;
   }
 
   @media ${breakpoint.device.s} {

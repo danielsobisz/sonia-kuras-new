@@ -78,7 +78,11 @@ export const StyledImg = styled.div`
 
 export const StyledTextContent = styled.div`
   flex-basis: 60%;
-  padding: 6rem 5rem 6rem 0;
+  padding: 4rem 5rem 4rem 0;
+
+  @media (max-width: 1050px) {
+    padding: 3rem 5rem 3rem 0;
+  }
 
   @media ${breakpoint.device.m} {
     padding: 3rem 5rem;
