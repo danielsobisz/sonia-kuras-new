@@ -5,10 +5,10 @@ const path = require(`path`);
 
 module.exports = {
   siteMetadata: {
-    siteUrl: 'https://danielsobisz.github.io',
-    title: 'Sonia Kuras',
+    siteUrl: 'https://www.soniakuras.com/',
+    title: 'Sonia Kuraś',
   },
-  pathPrefix: '/sonia-kuras-new',
+  pathPrefix: '/',
   plugins: [
     'gatsby-plugin-root-import',
     'gatsby-plugin-styled-components',
@@ -41,13 +41,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-google-fonts`,
       options: {
-        fonts: [
-          'Cinzel',
-          'Raleway',
-          'Arima Madurai',
-          'Bree Serif',
-          'Open Sans',
-        ],
+        fonts: ['Cinzel', 'Raleway', 'Arima Madurai', 'Bree Serif', 'Open Sans'],
         display: 'swap',
       },
     },
