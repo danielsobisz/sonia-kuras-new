@@ -11,7 +11,7 @@ import About from 'sections/about';
 import BackgroundSection from 'sections/backgroundSection';
 import CarouselSection from 'sections/carouselSection';
 import Pricing from 'sections/pricing';
-import Events from 'sections/events';
+// import Events from 'sections/events';
 import Contact from 'sections/contact';
 
 import { theme } from 'styles/theme';
@@ -46,7 +46,7 @@ const IndexPage = () => {
       /> */}
       <CarouselSection />
 
-      <Events />
+      {/* <Events /> */}
 
       <Pricing />
 
