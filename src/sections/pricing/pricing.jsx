@@ -5,6 +5,7 @@ import Title from 'components/title';
 
 import { pricesData } from './pricingData';
 import { StyledPrice, StyledWrapper, StyledContainer } from './pricing.styles';
+import SlideUp from '../../components/slideUp/slideup';
 
 const Pricing = () => {
   const pricesDataMaped = pricesData.map((price) => (
@@ -16,11 +17,13 @@ const Pricing = () => {
 
   return (
     <SectionWrapper>
-      <StyledContainer id="pricing" data-sal="slide-up" data-sal-duration="500">
-        <Title title="Cennik" asMain />
+      <SlideUp>
+        <StyledContainer id="pricing">
+          <Title title="Cennik" asMain />
 
-        <StyledWrapper>{pricesDataMaped}</StyledWrapper>
-      </StyledContainer>
+          <StyledWrapper>{pricesDataMaped}</StyledWrapper>
+        </StyledContainer>
+      </SlideUp>
     </SectionWrapper>
   );
 };

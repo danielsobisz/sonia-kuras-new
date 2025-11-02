@@ -6,6 +6,7 @@ import Title from 'components/title';
 import Video from 'components/video';
 
 import { StyledContainer, StyledWrapper, StyledText, StyledImg } from './imageText.styles';
+import SlideUp from '../slideUp/slideup';
 
 const ImageText = ({ pic, title, desc, video }) => {
   return (
@@ -28,25 +29,27 @@ const ImageText = ({ pic, title, desc, video }) => {
         const image = data.allImageSharp.edges.filter((img) => img.node.fluid.originalName === pic);
 
         return (
-          <StyledContainer data-sal="slide-up" data-sal-duration="500">
-            <Title title={title} asMain />
+          <SlideUp>
+            <StyledContainer>
+              <Title title={title} asMain />
 
-            <StyledWrapper>
-              <StyledText>
-                {desc?.map((item) => (
-                  <p>{item.text}</p>
-                ))}
-              </StyledText>
+              <StyledWrapper>
+                <StyledText>
+                  {desc?.map((item) => (
+                    <p>{item.text}</p>
+                  ))}
+                </StyledText>
 
-              <StyledImg>
-                {video ? (
-                  <Video videoTitle={title} videoSrcURL={video} />
-                ) : (
-                  <Img fluid={image[0].node.fluid} />
-                )}
-              </StyledImg>
-            </StyledWrapper>
-          </StyledContainer>
+                <StyledImg>
+                  {video ? (
+                    <Video videoTitle={title} videoSrcURL={video} />
+                  ) : (
+                    <Img fluid={image[0].node.fluid} />
+                  )}
+                </StyledImg>
+              </StyledWrapper>
+            </StyledContainer>
+          </SlideUp>
         );
       }}
     />

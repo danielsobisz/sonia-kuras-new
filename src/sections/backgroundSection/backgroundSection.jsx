@@ -14,6 +14,7 @@ import {
   StyledText,
   StyledBackgroundBlur,
 } from './backgroundSection.styles';
+import SlideUp from '../../components/slideUp/slideup';
 
 const BackgroundSection = ({ id, title, text, img, onClick, color }) => {
   return (
@@ -54,14 +55,9 @@ const BackgroundSection = ({ id, title, text, img, onClick, color }) => {
                 <Title title={title} isWhite asMain />
               </StyledTitleWrapper>
               {slideFactory ? (
-                <Carousel
-                  slides={slideFactory}
-                  data-sal="slide-up"
-                  data-sal-duration="500"
-                  hasPagination
-                  hasAutoplay
-                  loop
-                />
+                <SlideUp>
+                  <Carousel slides={slideFactory} hasPagination hasAutoplay loop />
+                </SlideUp>
               ) : (
                 <StyledText>
                   Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magnam laboriosam velit
