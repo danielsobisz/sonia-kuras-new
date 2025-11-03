@@ -31,12 +31,8 @@ const Contact = () => {
             <StyledName>Sonia Kuraś</StyledName>
             <Address />
             <FontAwesomeIcon icon={faMapMarkerAlt} />
-            <p>ul. Klonowa 1</p>
-            <p>Gdańsk-Wrzeszcz (przy dworcu PKP i SKM),</p>
-            <p>II piętro</p>
-            <p>
-              wejście do klatki schodowej od szczytu budynku, <br /> po stronie al. Grunwaldzkiej
-            </p>
+            <p>ul. Obrońców Westerplatte 34/2</p>
+            <p>Gdańsk Oliwa, wejście od strony klatki</p>
           </StyledAddress>
         </StyledContactInfo>
 

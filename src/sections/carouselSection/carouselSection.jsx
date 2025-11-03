@@ -22,6 +22,7 @@ import {
   StyledVideo,
   SvgWrapper,
 } from './carouselSection.styles';
+import SlideUp from '../../components/slideUp/slideUp';
 
 const CarouselSection = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -77,7 +78,9 @@ const CarouselSection = () => {
 
             <StyledContainer>
               <StyledCarouselWrapper>
-                <Carousel slides={slideFactory} data-sal="slide-up" hasNavigation loop />
+                <SlideUp>
+                  <Carousel slides={slideFactory} hasNavigation loop />
+                </SlideUp>
               </StyledCarouselWrapper>
             </StyledContainer>
             {isOpen && typeof window !== 'undefined' && (
