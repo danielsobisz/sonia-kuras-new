@@ -8,7 +8,7 @@ import { StyledPrice, StyledWrapper, StyledContainer } from './pricing.styles';
 import SlideUp from '../../components/slideUp/slideUp';
 
 const Pricing = () => {
-  const pricesDataMaped = pricesData.map((price) => (
+  const pricesDataMapped = pricesData.map((price) => (
     <StyledPrice key={price.title}>
       <p>{price.title}</p>
       <p>{price.price}</p>
@@ -21,7 +21,7 @@ const Pricing = () => {
         <StyledContainer id="pricing">
           <Title title="Cennik" asMain />
 
-          <StyledWrapper>{pricesDataMaped}</StyledWrapper>
+          <StyledWrapper>{pricesDataMapped}</StyledWrapper>
         </StyledContainer>
       </SlideUp>
     </SectionWrapper>
