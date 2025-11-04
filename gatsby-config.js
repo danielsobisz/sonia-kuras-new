@@ -12,7 +12,16 @@ module.exports = {
   plugins: [
     'gatsby-plugin-root-import',
     'gatsby-plugin-styled-components',
-    'gatsby-plugin-image',
+    `gatsby-plugin-image`,
+    `gatsby-plugin-sharp`,
+    `gatsby-transformer-sharp`,
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `images`,
+        path: `${__dirname}/src/images/`, // folder z twoimi zdjęciami
+      },
+    },
     'gatsby-plugin-react-helmet',
     {
       resolve: `gatsby-source-filesystem`,
@@ -21,17 +30,7 @@ module.exports = {
         path: path.join(__dirname, `src`, `images`),
       },
     },
-    'gatsby-plugin-sharp',
-    'gatsby-transformer-sharp',
     'gatsby-transformer-json',
-    {
-      resolve: 'gatsby-source-filesystem',
-      options: {
-        name: 'images',
-        path: './src/images/',
-      },
-      __key: 'images',
-    },
     {
       resolve: `gatsby-source-filesystem`,
       options: {

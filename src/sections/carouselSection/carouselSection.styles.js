@@ -34,6 +34,7 @@ export const StyledSlide = styled.div`
 
   @media ${breakpoint.device.xl} {
     width: 100%;
+    max-height: unset;
   }
 
   @media ${breakpoint.device.m} {
