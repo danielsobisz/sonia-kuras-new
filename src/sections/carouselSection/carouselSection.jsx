@@ -54,7 +54,7 @@ const CarouselSection = () => {
                 <Img
                   imgStyle={{
                     objectFit: 'cover',
-                    objectPosition: '50% 50%',
+                    objectPosition: item?.isCustomPosition ? '0% 50%' : '50% 50%',
                   }}
                   fluid={image[0].node.fluid}
                 />
