@@ -26,6 +26,7 @@ export const StyledSlide = styled.div`
 
   height: 100%;
   width: 140rem;
+  max-height: 67.5rem;
 
   background: white;
 
@@ -33,6 +34,7 @@ export const StyledSlide = styled.div`
 
   @media ${breakpoint.device.xl} {
     width: 100%;
+    max-height: unset;
   }
 
   @media ${breakpoint.device.m} {
@@ -63,6 +65,7 @@ export const StyledCarouselWrapper = styled.div`
 
   width: 140rem;
   height: 100%;
+  /* max-height: 30rem; */
 
   @media ${breakpoint.device.xl} {
     width: 100%;

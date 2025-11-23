@@ -22,6 +22,7 @@ import {
   StyledVideo,
   SvgWrapper,
 } from './carouselSection.styles';
+import SlideUp from '../../components/slideUp/slideUp';
 
 const CarouselSection = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -53,7 +54,7 @@ const CarouselSection = () => {
                 <Img
                   imgStyle={{
                     objectFit: 'cover',
-                    objectPosition: '50% 50%',
+                    objectPosition: item?.isCustomPosition ? '0% 50%' : '50% 50%',
                   }}
                   fluid={image[0].node.fluid}
                 />
@@ -77,7 +78,9 @@ const CarouselSection = () => {
 
             <StyledContainer>
               <StyledCarouselWrapper>
-                <Carousel slides={slideFactory} data-sal="slide-up" hasNavigation loop />
+                <SlideUp>
+                  <Carousel slides={slideFactory} hasNavigation loop />
+                </SlideUp>
               </StyledCarouselWrapper>
             </StyledContainer>
             {isOpen && typeof window !== 'undefined' && (

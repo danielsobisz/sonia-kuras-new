@@ -12,7 +12,16 @@ module.exports = {
   plugins: [
     'gatsby-plugin-root-import',
     'gatsby-plugin-styled-components',
-    'gatsby-plugin-image',
+    `gatsby-plugin-image`,
+    `gatsby-plugin-sharp`,
+    `gatsby-transformer-sharp`,
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `images`,
+        path: `${__dirname}/src/images/`, // folder z twoimi zdjęciami
+      },
+    },
     'gatsby-plugin-react-helmet',
     {
       resolve: `gatsby-source-filesystem`,
@@ -21,17 +30,7 @@ module.exports = {
         path: path.join(__dirname, `src`, `images`),
       },
     },
-    'gatsby-plugin-sharp',
-    'gatsby-transformer-sharp',
     'gatsby-transformer-json',
-    {
-      resolve: 'gatsby-source-filesystem',
-      options: {
-        name: 'images',
-        path: './src/images/',
-      },
-      __key: 'images',
-    },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -43,14 +42,6 @@ module.exports = {
       options: {
         fonts: ['Cinzel', 'Raleway', 'Arima Madurai', 'Bree Serif', 'Open Sans'],
         display: 'swap',
-      },
-    },
-    {
-      resolve: `gatsby-plugin-scroll-reveal`,
-      options: {
-        threshold: 0.01, // Percentage of an element's area that needs to be visible to launch animation
-        once: true, // Defines if animation needs to be launched once
-        disable: false, // Flag for disabling animations
       },
     },
     {
